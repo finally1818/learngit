@@ -1,0 +1,26 @@
+<header class="task7-header">
+    <i class="task7-header-left"><img src="images/set.png" alt="更多" /></i>
+    <i class="task7-header-right"><img src="images/close.png" alt="关闭" /></i>
+    <span class="task7-header-title">杀手杀人</span>
+</header>
+<div class="task7-game-content">
+    <div class="task7-game-header">
+        <a class="task7-game-header-music" href=""><img src="images/music.png" alt="music"/></a>
+        <span class="task7-game-header-text">杀手请睁眼，并告诉法官是否开枪<br/>杀手请选择要杀的对象</span>
+        <div class="task7-game-header-arrows"></div>
+    </div>
+    <div class="task7-game-body">
+        <span class="task7-game-text">点击下方玩家头像，对被杀的玩家进行标记</span>
+        <div id="game-zone" class="task7-game-zone">
+            <div ng-repeat="kill in playersText" ng-click="gameKill($index)" class="task7-game-zone-gamer {{kill.killClick}} {{kill.opacity}}" >
+                <div class="task7-gamer-name ">{{kill.job}}</div>
+                <div class="task7-gamer-num">{{kill.Num}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="task7-bottom"></div>
+<footer class="task7-footer">
+    <a id="game-confirm" class="task7-game-confirm" ng-click="decide()">确定</a>
+</footer>
+

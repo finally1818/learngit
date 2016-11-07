@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <title>task12</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/public12.css">
+    <link rel="stylesheet" href="css/task12.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <span class="col-lg-9 col-md-9 col-sm-7 col-xs-12 header-hot-line">客服热线：010-594-78634</span>
+                <div class="col-lg-3 col-md-3 col-sm-5 col-xs-12">
+                    <div class="text-center header-login-bar">
+                        <a href="#" class="header-login">登陆</a>
+                        <a href="#" class="header-login header-border-right">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="public-nav">
+        <div class="container">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Nav</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav navbar-nav nav-btn-group">
+                        <button type="submit" class="btn btn-default text-center">首页</button>
+                        <button type="submit" class="btn btn-default text-center">在线定制</button>
+                        <button type="submit" class="btn btn-default text-center">标准箱</button>
+                        <button type="submit" class="btn btn-default text-center">品质保障</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-9 col-sm-12 col-xs-12 process-group">
+                <div class="process text-center">
+                    <div class="process-bars process-border-radius-left">
+                        <div class="process-bars-no">1</div>
+                    </div>
+                    <span class="process-bars-text">1.定制纸箱</span>
+                </div>
+                <div class="process text-center">
+                    <div class="process-bars process-border-radius-right">
+                        <div class="process-bars-no">2</div>
+                    </div>
+                    <span class="process-bars-text">2.选择数量</span>
+                </div>
+                <div class="process text-center">
+                    <div class="process-bars process-border-radius-right">
+                        <div class="process-bars-no">3</div>
+                    </div>
+                    <span class="process-bars-text">3.上传附件</span>
+                </div>
+                <div class="process text-center">
+                    <div class="process-bars process-border-radius-right">
+                        <div class="process-bars-no">4</div>
+                    </div>
+                    <span class="process-bars-text">4.确认下单</span>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title">
+                <i class="title-1"></i>
+                <span>请您按照以下步骤来定制您的纸箱</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="content">
+                <ul>
+                    <li class="shape-title">
+                        <span>选择箱型</span>
+                    </li>
+                    <li class="shape">
+                        <form class="data row" action="#" method="get">
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <input type="radio" name="box" id="box1" checked="checked" />
+                                <label for="box1">对口箱</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <input type="radio" name="box" id="box2" />
+                                <label for="box2">飞机盒</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3  com-xs-6">
+                                <input type="radio" name="box" id="box3" />
+                                <label for="box3">天地盖</label>
+                            </div>
+                        </form>
+                        <select class="content-info shape-info-position">
+                            <option value="查看详情">查看详情</option>
+                            <option value="因缺思挺">因缺思挺</option>
+                            <option value="一颗赛艇">一颗赛艇</option>
+                        </select>
+                    </li>
+                    <li class="size-title">
+                        <span>确定尺寸</span>
+                    </li>
+                    <li class="size">
+                        <form class="data row size-od" action="#" method="get">
+                            <div class="col-lg-2 col-md-2 col-sm-12 com-xs-12">
+                                <input type="radio" name="size-od" id="size-od" checked="checked" />
+                                <label for="size-od">外径</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <label class="size-info">
+                                    长
+                                    <input type="number" name="length" value="" min="1" step="1">
+                                    mm
+                                </label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <label class="size-info">
+                                    宽
+                                    <input type="number" name="width" value="" min="1" step="1">
+                                    mm
+                                </label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <label class="size-info">
+                                    高
+                                    <input type="number" name="height" value="" min="1" step="1">
+                                    mm
+                                </label>
+                            </div>
+                        </form>
+                        <form class="data row" action="#" method="get">
+                            <div class="col-lg-2 col-md-2 col-sm-12 com-xs-6">
+                                <input type="radio" name="size-id" id="size-id" />
+                                <label for="size-id">内径</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <label class="size-info">
+                                    长
+                                    <input type="number" name="length" value="" min="1" step="1">
+                                    mm
+                                </label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <label class="size-info">
+                                    宽
+                                    <input type="number" name="width" value="" min="1" step="1">
+                                    mm
+                                </label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 com-xs-6">
+                                <label class="size-info">
+                                    高
+                                    <input type="number" name="height" value="" min="1" step="1">
+                                    mm
+                                </label>
+                            </div>
+                        </form>
+                        <select class="content-info size-info-position">
+                            <option>查看详情</option>
+                            <option>因缺思挺</option>
+                            <option>一颗赛艇</option>
+                        </select>
+                    </li>
+                    <li class="texture-title">
+                        <span>选择材质</span>
+                    </li>
+                    <li class="texture">
+                        <form class="data row"  action="#" method="get">
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                <input type="radio" name="texture" id="A" checked="checked" />
+                                <label for="A">三层A瓦优质</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                <input type="radio" name="texture" id="B" />
+                                <label for="B">三层B瓦优质</label>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                <input type="radio" name="texture" id="C" />
+                                <label for="C">三层C瓦优质</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                <input type="radio" name="texture" id="D" />
+                                <label for="D">三层D瓦优质</label>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                                <input type="radio" name="texture" id="E" />
+                                <label for="E">三层E瓦优质</label>
+                            </div>
+                        </form>
+                        <select class="content-info texture-info-position">
+                            <option>查看详情</option>
+                            <option>因缺思挺</option>
+                            <option>一颗赛艇</option>
+                        </select>
+                    </li>
+                    <li class="content-next text-center">
+                        <input type="button" value="下一步" class="next-button">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="public-footer">
+        <div class="container">
+            <div class="row footer-col">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-col-l">51包装网一纸箱包装首选服务平台</div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-col-r">
+                        <a href="#">关于我们</a>
+                        <a href="#">配送流程</a>
+                        <a href="#">联系我们</a><br/>
+                        <a href="#">下单指南</a>
+                        <a href="#">媒体介绍</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-contact">
+                        <span>
+                            TEL：400-0000-000<br>
+                            企业QQ：123456789<br>
+                            微信号：XXXXXXX
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center">
+            <span>北京五一包装科技有限公司Copyright ©2015</span>
+            <span>51baozhuang.com015 All rights reserved.</span>
+            <span>京icp备99999999-1</span>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

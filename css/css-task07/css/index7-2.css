@@ -1,0 +1,132 @@
+
+.index-banner {
+    height: 248px;
+    position: relative;
+    background-image: url(../images/banner7-2.png);
+    background-size:cover;
+    clear: both;
+}
+
+.index-banner-text {
+    position: absolute;
+    top: 80px;
+    left: 906px;
+    color: #ffffff;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.index-banner-text h3 {
+    display: block;
+    font-size: 20px;
+    text-align: right;
+    float: left;
+}
+
+.index-banner-text span {
+    font-size: 45px;
+}
+
+.index-banner-text h2 {
+    float: left;
+    display: block;
+    margin: 33px 0 0 28px ;
+    font-size: 62px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.index-enterprises {
+    min-height: 1400px;
+}
+
+.enterprises-nav {
+    height: 22px;
+    margin: 28px 0;
+    font-size: 16px;
+}
+
+.mainnav {
+    float: left;
+    color: #000;
+}
+
+.subnav {
+    float: left;
+    color: #29b078;
+}
+
+.menu {
+    float: left;
+    width: 305px;
+    min-height: 710px;
+    box-shadow: 0 2px 2px #ededed;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.enterprises-title {
+    height: 62px;
+    font-size: 16px;
+    line-height: 62px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+}
+
+.enterprises-menu {
+    text-align: left;
+}
+
+.enterprises-menu li {
+    margin: 32px 0 32px 132px;
+    list-style: url("../images/ico1.png");
+}
+
+.enterprises-menu li:hover {
+    list-style: url("../images/ico2.png");
+}
+
+.enterprises-menu li a {
+    color: #29b078;
+}
+
+.enterprises-menu li a:hover {
+    color: #ff650e;
+}
+
+.content {
+    float: right;
+    width: 870px;
+    height: 1100px;
+    font-size: 14px;
+    color: #999;
+    line-height: 30px;
+    box-shadow: 0 2px 2px #ededed;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    background: #ffffff;
+    text-indent: 2em;
+}
+
+.tudo-intro {
+    height: 156px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.tudo-intro a img {
+    display: block;
+    margin-left:60px;
+    float: left;
+}
+
+.tudo-intro p{
+    width: 570px;
+    margin: 20px 60px 20px 0;
+    display: block;
+    float: right;
+}
+
+.tudo-content p {
+    margin: 35px 0;
+}
+

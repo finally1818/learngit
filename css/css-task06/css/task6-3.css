@@ -1,0 +1,177 @@
+/*重置reset*/
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", monospace;
+}
+
+body {
+    background: #29bde0;
+}
+
+ol, ul, li {
+    list-style: none;           /*列表样式无*/
+}
+
+a {
+    display: block;         /*设置为块级元素*/
+    text-decoration: none;          /*文字修饰为无，一般用于设置清楚超链接的默认下划线*/
+}
+
+img {
+    display: block;         /*设置为块级元素*/
+    border: none;           /*设置为无边框*/
+}
+
+.clearfloat:after {
+    display: block;         /*设置为块级元素*/
+    clear: both;            /*清除浮动*/
+    content: '';            /*:after{content:'';}固定格式*/
+    visibility: hidden;             /*将元素隐藏*/
+    height: 0;              /*不设置高度*/
+}
+
+/*头部header--------------------------------------------------------------------------------------*/
+.header {
+    text-align: center;
+}
+
+.set {
+    float: left;
+    padding: 3.75% 3.75%;
+    width: 6.09% ;                  /*宽度39px*/
+    overflow: hidden;
+}
+
+.close {
+    float: right;
+    padding:4.06% 3.75%;
+    width: 5.63%;                   /*宽度36px*/
+    overflow: hidden;
+}
+
+.headline {
+    display: block;
+    padding: 3.2% 0;
+    font-size: 5.31vw;              /*34px*/
+    color: #fff;
+}
+
+/*主体部分mainbody---------------------------------------------------------------------------------*/
+.mainbody {
+
+}
+
+.vote {
+    position: relative;
+    background: #b9e9f5;
+    clear: both;
+}
+.vote-text {
+    display: block;
+    padding: 4.38% 0 4.38% 7.19%;  /*28 0 28 46*/
+    font-size: 4.06vw;                  /*26*/
+}
+
+.music {
+    float: right;
+    width: 8.125%;              /*52*/
+    padding: 2.34% 2.66% 2.34% 0;/*15 17 15 0*/
+}
+
+.triangle {
+    position: absolute;
+    top: 100%;
+    left: 11.5%;
+    width: 0;
+    height: 0;
+    border-left: 1.02vw solid transparent;           /*测量三角形宽度15px，高度13px*/
+    border-right: 1.02vw solid transparent;             /*实际还原应该是宽度15px，高度6.5px*/
+    border-top: 2.34vw solid #b9e9f5;        /*相对于640PX*/
+}
+
+.game {
+    clear: both;
+}
+
+.game-text {
+    display: block;
+    padding: 3.91% 0 6.56% 11.25%;          /*25 0  42  72*/
+    font-size: 3.72vw;              /*24*/
+    color: #FFFFFF;
+}
+
+.gamers {
+    float: left;
+    width: 23.5%;                  /*150.4px*/
+    margin:0 4.7%;
+}
+
+.gamer-name {
+    display: block;
+    text-align: center;
+    padding: 27.27% 0 22.73%;             /*36 0 30 0*/
+    font-size: 4.69vw;                /*30*/
+    background: #f5c97b;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+}
+
+.gamer-No {
+    display: block;
+    text-align: center;
+    font-size: 3.59vw;                /*23*/
+    color: #FFFFFF;
+    background: #83b09a;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+}
+
+.game-skill {
+
+}
+
+.game-skill:hover {
+
+}
+
+.kill,.seek,.target {
+    float: left;
+    width: 22.1%;
+    margin: 14.6% 3.79% 14.6% 0;              /*22*/
+}
+
+.save {
+    float: left;
+    width: 22.1%;
+    margin-right: 0;
+    margin-top: 14.6%;
+}
+
+.bottom {
+    width:100%;
+    padding-bottom: 33%;
+    clear: both;
+}
+
+/*底部footer---------------------------------------------------------------------*/
+.footer {
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 6.56% 11.72% 9.38%;                  /*42  75  60  75*/
+    background: #29bde0;
+    border-top: 2px solid #FFFFFF;
+}
+
+.footer-die {
+    display: block;
+    width: 76.56%;                                /*490*/
+    text-align: center;
+    font-size: 6.25vw;                      /*40*/
+    color: #FFFFFF;
+    padding: 3% 0;                      /*24 0*/
+    background: #fbb435;
+}

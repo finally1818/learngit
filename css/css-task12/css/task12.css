@@ -1,0 +1,284 @@
+
+/*---process---------------------------------------------------------------------*/
+
+@media screen and ( min-width: 1200px) {
+    .process-group {
+        float: right;
+    }
+}
+
+.process {
+    position: relative;
+    float: left;
+    width: 10rem;
+    height: 5.75rem;
+    margin-top: 3rem;
+}
+
+.process-bars {
+    height: 0.3125rem;
+    background: #CCCCCC;
+}
+
+.process-bars-no {
+    position: absolute;
+    top: -0.53125rem;
+    left: 4.6875rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    font-size: 0.875rem;
+    color: #ffffff;
+    vertical-align: middle;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #cccccc;
+    z-index: 1;
+}
+
+.process-bars-text {
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.125rem;
+    color: #cccccc;
+    padding: 2.0625rem 0 2.1875rem;
+}
+
+.process-border-radius-right {
+    -webkit-border-top-right-radius: 0.3125rem;
+    -moz-border-top-right-radius: 0.3125rem;
+    border-top-right-radius: 0.3125rem;
+    -webkit-border-bottom-right-radius: 0.3125rem;
+    -moz-border-bottom-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+}
+
+.process-border-radius-left {
+    -webkit-border-top-left-radius: 0.3125rem;
+    -moz-border-top-left-radius: 0.3125rem;
+    border-top-left-radius: 0.3125rem;
+    -webkit-border-bottom-left-radius: 0.3125rem;
+    -moz-border-bottom-left-radius: 0.3125rem;
+    border-bottom-left-radius: 0.3125rem;
+}
+
+.process:hover .process-bars {
+    -webkit-border-radius: 0.3125rem;
+    -moz-border-radius: 0.3125rem;
+    border-radius: 0.3125rem;
+    background-color: rgba(255,127,2,1);
+}
+
+.process:hover .process-bars-no {
+    position: absolute;
+    top: -0.625rem;
+    left: 4.5625rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    color: rgba(255,255,255,1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(255,127,2,1);
+}
+
+.process:hover .process-bars-text {
+    color: rgba(255,127,2,1);
+}
+
+/*---title---------------------------------------------------------------------*/
+
+.title {
+    padding: 0;
+}
+
+.title-1 {
+    display: inline-block;
+    width: 0.25rem;
+    height: 1.5rem;
+    -webkit-border-radius: 0.125rem;
+    -moz-border-radius: 0.125rem;
+    border-radius: 0.125rem;
+    background: #1d7ad9;
+    margin: 0 0.375rem -0.3125rem 0;
+}
+
+.title span{
+    display: inline-block;
+    font-size: 1.375rem;
+    color: #333333;
+    line-height: 3.375rem;
+}
+
+/*---content-------------------------------------------------------------------*/
+
+.content {
+    border-left: 0.0625rem solid #e7e7e7;
+    border-right: 0.0625rem solid #e7e7e7;
+    -webkit-border-top-left-radius: 0.25rem;
+    -moz-border-top-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    -webkit-border-top-right-radius: 0.25rem;
+    -moz-border-top-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.shape-title,
+.size-title,
+.texture-title{
+    width: 100%;
+    height: 2.75rem;
+    border-top: 0.0625rem solid #e7e7e7;
+    background: #f3f3f3 url("../images/icon1.png") no-repeat 1rem;
+}
+
+.shape-title span,
+.size-title span,
+.texture-title span {
+    padding-left: 2.75rem;
+    font-size: 1.125rem;
+    color: #1d7ad9;
+    line-height: 2.75rem;
+}
+
+.size-title {
+    background: #f3f3f3 url("../images/icon2.png") no-repeat 0.9375rem;
+}
+
+.texture-title {
+    background: #f3f3f3 url("../images/icon3.png") no-repeat 1.3125rem;
+}
+
+.shape {
+    position: relative;
+    padding: 1.59375rem 1.0625rem 1.59375rem 2.8125rem;
+    background: #fbfcff;
+    border-top: 0.0625rem solid #e7e7e7;
+}
+
+.data label {
+    padding-left: 1.0625rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+    line-height: 2.3125rem;
+    color: #666666;
+    margin: 0;
+}
+
+.data input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    display:inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 0.0625rem solid #d6d6d6;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:50%;
+    border-radius: 50%;
+    background: #f8f9fb;
+    margin: 0 0 0.3rem;
+    vertical-align: middle;
+}
+
+.data input:checked {
+    border: 0.4375rem solid #1d7ad9;
+}
+
+.content-info {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.53125rem 3.375rem 0.53125rem 1.0625rem;
+    background: url("../images/btn.png" ) no-repeat scroll 6.1875rem 0.25rem transparent;
+    font-size: 0.875rem;
+    color: #999999;
+    border: 0.0625rem solid #e8e8e8;
+    cursor:pointer;
+}
+
+.shape-info-position {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.0625rem;
+}
+
+.size {
+    position: relative;
+    padding: 1.75rem 1.0625rem 1.75rem 2.8125rem;
+    background: #fbfcff;
+    border-top: 0.0625rem solid #e7e7e7;
+}
+
+.size-od {
+    margin-bottom: 0.6875rem;
+}
+
+.size-info {
+    font-size: 1.125rem;
+    color: #666666;
+}
+
+.size-info input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 4.25rem;
+    height: 1.75rem;
+    border: 0.0625rem solid #e8e8e8;
+}
+
+.size-info-position {
+    position: absolute;
+    top: 3.1875rem;
+    right: 1.0625rem;
+}
+
+.texture {
+    position: relative;
+    padding: 3.25rem 0 3.25rem 2.8125rem;
+    border-top: 0.0625rem solid #e7e7e7;
+}
+
+.texture-info-position {
+    position: absolute;
+    top: 3.1875rem;
+    right: 1.0625rem;
+}
+
+.content-next {
+    border-top: 0.0625rem solid #e7e7e7;
+    border-bottom: 0.0625rem solid #e7e7e7;
+}
+
+.next-button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    width: 11.25rem;
+    height: 2.75rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: #e15053;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    margin: 8.875rem 0 6.0625rem;
+    border: 0.0625rem solid #e15053;
+}
+
+/*
+.next-button:hover{
+    background: #1165ae;
+    border: 1px solid #1165ae;
+}
+*/
+
+.next-button:active{
+    background:#0d79d5;
+    border: 1px solid #0d79d5;
+}

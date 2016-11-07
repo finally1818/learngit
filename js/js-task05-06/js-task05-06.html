@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js任务5学员报名</title>
+    <link rel="stylesheet" href="css/js-task05.css">
+    <!--添加jQuery-->
+    <script src="js/jquery-3.0.0.js"></script>
+    <!--添加日期选择器-->
+    <script src="js/Calendar.js"></script>
+    <!--富文本编辑器配置文件-->
+    <script src="ue/ueditor.config.js"></script>
+    <!--富文本编辑器源码文件-->
+    <script src="ue/ueditor.all.js"></script>
+    <script>
+        //初始化，类似windows.loan
+        $(document).ready(function() {
+            //添加富文本编辑器
+            var ue = UE.getEditor('wish', {
+                toolbars: [
+                    [
+                        '|',
+                        'undo',                  //撤销
+                        'redo',                  //重做
+                        '|',
+                        'bold',                  //加粗
+                        'italic',                //斜体
+                        'underline',             //下划线
+                        'strikethrough',         //删除线
+                        '|',
+                        'forecolor',             //字体颜色
+                        'backcolor',             //背景色
+                        '|',
+                        'removeformat',          //清除格式
+                        'insertorderedlist',     //有序列表
+                        'insertunorderedlist',   //无序列表
+                        '|',
+                        'cleardoc',              //清空文档
+                        'paragraph',             //段落格式
+                        'fontfamily',            //字体
+                        'fontsize',              //字号
+                        '|',
+                        'justifyleft',           //居左对齐
+                        'justifyright',          //居右对齐
+                        'justifycenter',         //居中对齐
+                        '|',
+                        'link',                  //超链接
+                        'unlink',                //取消链接
+                        '|',
+                        'emotion',               //表情
+                        'spechars',              //特殊字符
+                        'simpleupload',          //单图上传
+                        '|'
+                    ]
+                ],
+                autoHeightEnabled: false,        //自适应高度启动：关闭。防止内容过多高度变高。关闭则会出现滚动条。我自己翻译的，可能错了
+                autoFloatEnabled: false,         //自适应浮动启动：关闭
+                elementPathEnabled:false         //元素路径启动：关闭
+            });
+
+            //表单验证
+            var $name = $('#name');
+            var reName = $('#re-name');
+            var $qq = $('#qq');
+            var reQQ = $('#re-qq');
+            var $type = $('input[name="type"]');
+            var reType = $('#re-type');
+            var $school = $('#school');
+            var reSchool = $('#re-school');
+            var $talent = $('input[name="talent"]');
+            var reTalent = $('#re-talent');
+            var $level = $('input[name="level"]');
+            var reLevel = $('#re-level');
+
+            var length = 0;
+            var ok1 = false;
+            var ok2 = false;
+            var ok3 = false;
+            var ok4 = false;
+            var ok5 = false;
+            var ok6 = false;
+            var ok7 = false;
+            var ok8 = false;
+
+            //正则表达式声明
+            var Chinese = /[^\u4e00-\u9fa5]/g;       //\u4e00-\u9fa5表示所有汉子,该正则表示所有非汉字。
+            var QQNum = /^[1-9][0-9]{4,9}$/g;        //1-9开头，0-9循环4-9次的数字结尾构成的数字
+
+            //创建一个函数，转换传入的字符串（汉子或全角）的长度。
+            function getLength(str) {
+                return str.replace(/[^\x00-\xff]/g, 'xx').length;       //[^\x00-\xff]检查是否是汉字或者全角
+            }
+
+            //姓名验证
+            //焦点函数
+            $name.focus(function(){
+                reName.html('请输入2-4个中文汉字');
+            });
+            //失焦函数
+            $name.blur(function(){
+                length = getLength($name.val());
+                if (length == null || length == "" || length == undefined){
+                    reName.html('请输入2-4个中文汉字');
+                }
+                else if (Chinese.test($name.val())){
+                    reName.html('含有非中文字符');
+                }
+                else if (length < 4) {
+                    reName.html('有那么短的名字吗');
+                }
+                else if (length > 8){
+                    reName.html('有那么长的名字吗？');
+                }
+                else {
+                    reName.html('恭喜你终于输入正确了');
+                    console.log($name.val());
+                    ok1 = true;
+                }
+            });
+
+            //QQ验证
+            $qq.focus(function(){
+                reQQ.html('请输入QQ号');
+            });
+            $qq.blur(function(){
+                length = $qq.val().length;
+                if (length == null || length == "" || length == undefined){
+                    reQQ.html('请输入QQ号');
+                }
+                else if (QQNum.test($qq.val())){
+                    reQQ.html('恭喜你终于输入正确了');
+                    ok2 = true;
+                }
+                else if (length > 10){
+                    reQQ.html('有那么长的QQ号吗？');
+                }
+                else {
+                    reQQ.html('QQ号含非数字或长度不符');
+                }
+            });
+
+            //类型验证
+            $type.focus(function(){
+                reType.html('已选中');
+            });
+            $type.blur(function(){
+                if ($type.is(':checked')){
+                    reType.html('已选中');
+                    ok3 = true;
+                }
+            });
+
+            //院校验证
+            $school.focus(function(){
+                reSchool.html('请输入您的学校')
+            });
+            $school.blur(function(){
+                length = getLength($school.val());
+                if (length == null || length == "" || length == undefined){
+                    reSchool.html('请输入您的学校')
+                }
+                else if (Chinese.test($school.val())){
+                    reSchool.html('含有非中文字符');
+                } else if (length < 4){
+                    reSchool.html('有那么短的名字吗');
+                }
+                else {
+                    reSchool.html('恭喜你终于输入正确了');
+                    ok4 = true;
+                }
+            });
+
+            //资质验证
+            $talent.focus(function(){
+                reTalent.html('已选中');
+            });
+            $talent.blur(function(){
+                if ($talent.is(':checked')){
+                    reTalent.html('已选中');
+                    ok5 = true;
+                }
+            });
+
+            //等级验证
+            $level.focus(function(){
+                reLevel.html('已选中');
+            });
+            $level.blur(function(){
+                if ($level.is(':checked')){
+                    reLevel.html('已选中');
+                    ok6 = true;
+                }
+            });
+
+            //时间验证
+            //获取当前日期
+            /*function show(){
+                var mydate = new Date();
+                var year = mydate.getFullYear(),
+                    month = mydate.getMonth() + 1,
+                    data = mydate.getDate();
+                return str;
+            }*/
+            //当前时间时间戳，默认毫秒，/1000获得秒。
+
+            //ajax内容
+            $('#apply-save').click(function(){
+                var name = $('#name').val(),            //获取输入的姓名
+                        qq = $('#qq').val(),                //获取输入的QQ号
+                        type = parseInt($('input[name="type"]:checked').val()),         //获取选择的类型
+                        school = $('#school').val(),        //获取输入的学校
+                        talent = parseInt($('input[name="talent"]:checked').val()),         //获取选择的资质
+                        level = parseInt($('input[name="level"]:checked').val()),       //获取选择的修行时间
+                        time = $('#time').val(),        //获取输入的日期
+                        wish = ue.getContent();     //获取富文本编辑器的内容
+                var typeInfo,
+                        talentInfo,
+                        levelInfo;
+                switch(type) {
+                    case 1:
+                        typeInfo = 'CSS';
+                        break;
+                    case 2:
+                        typeInfo = 'JS';
+                        break;
+                    case 3:
+                        typeInfo = 'JAVA';
+                        break;
+                    case 4:
+                        typeInfo = '运维';
+                        break;
+                    case 5:
+                        typeInfo = 'DBA';
+                        break;
+                    case 6:
+                        typeInfo = '产品';
+                        break;
+                    case 7:
+                        typeInfo = 'IOS';
+                        break;
+                    case 8:
+                        typeInfo = 'ANDROID';
+                        break;
+                    default:
+                        break
+                }
+                switch(talent) {
+                    case 1:
+                        talentInfo = '学霸';
+                        break;
+                    case 2:
+                        talentInfo = '学渣';
+                        break;
+                    default:
+                        break;
+                }
+                switch(level) {
+                    case 1:
+                        levelInfo = '0基础';
+                        break;
+                    case 2:
+                        levelInfo = '修行3个月以内';
+                        break;
+                    case 3:
+                        levelInfo = '修行6个月以内';
+                        break;
+                    case 4:
+                        levelInfo = '修行1年以内';
+                        break;
+                    case 5:
+                        levelInfo = '修行3年以内';
+                        break;
+                    case 6:
+                        levelInfo = '修行3年以上';
+                        break;
+                    default:
+                        break;
+                }
+                if (ok1 && ok2 &&       //条件无法判断，不知道怎么传变量进来
+                        ok3 && ok4 &&
+                        ok5 && ok6 &&
+                        ok7 && wish != ''){
+                    $.ajax({
+                        url: "/a/student",        //请求的url地址
+                        dataType: "json",         //返回格式为json
+                        async: true,              //请求是否异步，默认为异步，这也是ajax重要特性
+                        type: "POST",             //请求方式，默认'GET'
+                        data: {
+                            name,
+                            qq,
+                            type,
+                            school,
+                            talent,
+                            level,
+                            time,
+                            wish
+                        },                       //参数值
+                        success: function (data) {
+                            //请求成功时处理
+                            $('#result').html('报名成功：' + data.message);
+                            alert('报名成功' + '\n'
+                                    + '姓名：' + name + '\n'
+                                    + 'QQ：' + qq + '\n'
+                                    + '修真类型：' + typeInfo + '\n'
+                                    + '毕业院校：' + school + '\n'
+                                    + '资质：' + talentInfo + '\n'
+                                    + '修行等级：' + levelInfo + '\n'
+                                    + '预计入学时间：' + time + '\n'
+                                    + '修行立愿：' + wish + '\n')
+                        },
+                        error: function (jqXHR) {
+                            alert('报名失败：' + jqXHR.status);      //请求出错处理
+                        }
+                    });
+                }
+                else {
+                    $('#result').html('信息填写不全');
+                }
+                console.log(typeInfo,talentInfo,levelInfo);
+                console.log(name,qq,type,school,talent,level,time,wish);
+            });
+        });
+    </script>
+
+</head>
+<body>
+<!--<input type="submit" value="用户登陆" onclick="checkForm()"/>-->
+    <div class="apply">
+        <form>
+            <label>
+                <span class="apply-text">姓名：</span>
+                <input class="input-size" id="name" type="text" value="">
+            </label>
+            <div id="re-name" class="regular"></div>
+            <label>
+                <span class="apply-text">QQ：</span>
+                <input class="input-size" id="qq" type="text" value="">
+            </label>
+            <div id="re-qq" class="regular"></div>
+            <div>
+                <span class="apply-text">修真类型：</span>
+                <label for="type-css" class="study-type">
+                    <input type="radio" name="type" id="type-css" class="input-radio" value="1"/>
+                    CSS
+                </label>
+                <label for="type-js" class="study-type">
+                    <input type="radio" name="type" id="type-js" class="input-radio" value="2"/>
+                    JS
+                </label>
+                <label for="type-java" class="study-type">
+                    <input type="radio" name="type" id="type-java" class="input-radio" value="3"/>
+                    JAVA
+                </label>
+                <label for="type-op" class="study-type">
+                    <input type="radio" name="type" id="type-op" class="input-radio" value="4"/>
+                    运维
+                </label>
+                <label for="type-dba" class="study-type">
+                    <input type="radio" name="type" id="type-dba" class="input-radio" value="5"/>
+                    DBA
+                </label>
+                <label for="type-pm" class="study-type">
+                    <input type="radio" name="type" id="type-pm" class="input-radio" value="6"/>
+                    产品
+                </label>
+                <label for="type-ios" class="study-type">
+                    <input type="radio" name="type" id="type-ios" class="input-radio" value="7"/>
+                    IOS
+                </label>
+                <label for="type-android">
+                    <input type="radio" name="type" id="type-android" class="input-radio" value="8"/>
+                    ANDROID
+                </label>
+            </div>
+            <div id="re-type" class="regular"></div>
+            <label>
+                <span class="apply-text">毕业院校：</span>
+                <input class="input-size" id="school" type="text" value="">
+            </label>
+            <div id="re-school" class="regular"></div>
+            <div>
+                <span class="apply-text">资质：</span>
+                <label for="a2" class="study-type">
+                    <input type="radio" name="talent" id="a2" class="input-radio" value="1"/>
+                    学霸
+                </label>
+                <label for="b2" class="study-type">
+                    <input type="radio" name="talent" id="b2" class="input-radio"  value="2"/>
+                    学渣
+                </label>
+            </div>
+            <div id="re-talent" class="regular"></div>
+            <div>
+                <span class="apply-text">修行等级：</span>
+                <label for="level1" class="study-type">
+                    <input type="radio" name="level" id="level1" class="input-radio" value="1" />
+                    0基础
+                </label>
+                <input type="radio" name="level" id="level2" class="input-radio" value="2" />
+                <label for="level2" class="study-type">
+
+                    修行3个月以内
+                </label>
+                <label for="level3" class="study-type">
+                    <input type="radio" name="level" id="level3" class="input-radio" value="3" />
+                    修行6个月以内
+                </label>
+                <label for="level4" class="study-type">
+                    <input type="radio" name="level" id="level4" class="input-radio" value="4" />
+                    修行1年以内
+                </label>
+                <label for="level5" class="study-type">
+                    <input type="radio" name="level" id="level5" class="input-radio" value="5" />
+                    修行3年以内
+                </label>
+                <label for="level6">
+                    <input type="radio" name="level" id="level6" class="input-radio" value="6" />
+                    修行3年以上
+                </label>
+            </div>
+            <div id="re-level" class="regular"></div>
+            <label>
+                <span class="apply-text">预计入学时间：</span>
+                <input class="input-size" id="time" type="text" value="" onclick="fPopCalendar(event,this,this)">
+            </label>
+            <div id="re-time" class="regular"></div>
+            <div class="wish">
+                <span>修行立愿：</span>
+                <!--加载编辑器的容器-->
+                <script id="wish" type="text/plain"></script>
+            </div>
+            <footer>
+                <button type="button" class="apply-button" id="apply-save">保存</button>
+                <button type="button" class="apply-button" id="apply-cancel">取消</button>
+            </footer>
+        </form>
+    </div>
+    <p id="result"></p>
+
+
+    <script>
+        var $time = $('#time');
+        /*var reTime = $('#re-time');*/
+        var timesTamp = parseInt(new Date().getTime()/1000);        //当前时间时间戳
+        alert(timesTamp);
+
+        var str = $time.val();
+        var timestamp = (Date.parse(str))/1000;
+        function checkForm() {
+            console.log(str);
+            console.log(timestamp);
+        }
+    </script>
+</body>
+</html>

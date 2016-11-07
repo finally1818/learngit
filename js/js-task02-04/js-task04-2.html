@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js任务4-2法官日记</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/js-task04-2.css">
+</head>
+<body>
+    <header class="header">
+        <i class="header-left"><img src="images/header-prev.png" alt="返回" /></i>
+        <i class="header-right"><img src="images/close.png" alt="关闭" /></i>
+        <span class="header-title">法官日记</span>
+    </header>
+    <div class="game">
+        <div class="game-body">
+            <div class="game-day">
+                <i><img src="images/game-day-right.png"></i>
+                <span id="game-day">第一天</span>
+            </div>
+            <div class="game-content">
+                <div id="game-entry1" class="game-entry" onclick="game_type_btn1('killer')">
+                    杀手杀人
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry2" class="game-entry">
+                    警察验人
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry3" class="game-entry">
+                    狙击狙人
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry4" class="game-entry game-entry-margin">
+                    医生救人
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry5" class="game-entry">
+                    亡灵发表遗言
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry6" class="game-entry">
+                    玩家依次发言
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry7" class="game-entry">
+                    投票
+                    <div class="game-entry-arrows"></div>
+                </div>
+                <div id="game-entry8" class="game-time">
+                    <img src="images/game-time.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/js-task04-2.js"></script>
+</body>
+</html>

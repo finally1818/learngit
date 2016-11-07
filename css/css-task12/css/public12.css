@@ -1,0 +1,183 @@
+
+@media screen and (max-width: 767px) {
+    html {
+        /* 小于767px，1rem=8px */
+        font-size: 65%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        /* 768px-991px每111.5px宽字体减小2px(60px-80px) */
+        font-size: 70%;
+    }
+}
+@media screen and (min-width: 992px) {
+    html {
+        /* 992px-1199px每103.5像素宽字体减小2px(80px-100px) */
+        font-size: 85%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    html {
+        /* 大于1200px，1rem=16px */
+        font-size: 100%;
+    }
+}
+
+body {
+    background: #FFFFFF;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ol, ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+/*---header--------------------------------------------------------------------------------------*/
+
+header {
+    background: #1d7ad9;
+    font-size: 0;
+}
+
+.header-hot-line {
+    line-height: 2.5rem;
+    font-size: 0.875rem;
+    color: #FFFFFF;
+}
+
+.header-login-bar {
+    float: right;
+}
+
+
+.header-login {
+    display: inline-block;
+    width: 3.375rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    line-height: 2.5rem;
+    border-left: 0.0625rem solid #FFFFFF;
+    -webkit-transition: all .5s ease-out ;
+    -moz-transition: all .5s ease-out ;
+    -o-transition: all .5s ease-out ;
+    transition: all .5s ease-out ;
+}
+
+.header-border-right {
+    border-right: 0.0625rem solid #FFFFFF;
+}
+
+.header-login:hover {
+    width: 6.5rem;
+    color: #000;
+    background: #ffffff;
+}
+
+@media screen and (max-width: 360px) {
+    .header-hot-line, .header-login-bar {
+        width: 100%;
+    }
+    .header-login-bar a {
+        float: none;
+    }
+}
+
+/*---nav--------------------------------------------------------------------------------------*/
+
+.public-nav {
+    background: #f9f9f9;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.icon-bar {
+    background: #1d7ad9;
+}
+
+.nav-btn-group {
+    float: right;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 0.71875rem 1.0625rem;
+    background: #ffffff;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 1px #e6e6e6;
+    border: 1px solid transparent;
+}
+
+@media screen and ( min-width: 768px ) {
+    .nav-btn-group {
+        padding: 1.75rem 0 1.5625rem;
+    }
+    .btn {
+        margin-left: 3.75rem;
+    }
+}
+
+.btn:hover {
+    color: #FFFFFF;
+    background: #1d7ad9;
+}
+
+/*---footer----------------------------------------------------------------------------------------*/
+
+.public-footer {
+    background: #f9f9f9;
+}
+
+.footer-col {
+    padding: 4rem 0 3.5rem;
+}
+
+.footer-col-l {
+    font-size: 1.125rem;
+    color: #999;
+}
+
+.footer-col-r a {
+    display: inline-block;
+    line-height: 2.375rem;
+    font-size: 0.875rem;
+    color: #999;
+    padding-right: 2.1875rem;
+}
+
+.footer-col-r a:hover {
+    color: #1d7ad9;
+}
+
+.footer-contact {
+    width: 100%;
+    background: url("../images/2d-code.png") no-repeat 9.75rem 0 transparent;
+}
+
+.footer-contact span {
+    display: inline-block;
+    line-height: 1.9375rem;
+    font-size: 0.875rem;
+    color: #999;
+}
+
+
+.footer-copyright {
+    line-height: 1.875rem;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    background: #1d7ad9;
+}
+
+.footer-copyright span {
+    padding: 0 0.25rem;
+}

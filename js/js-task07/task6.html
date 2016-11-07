@@ -1,0 +1,47 @@
+
+<header class="task6-header">
+    <i class="task6-header-left"><img src="images/header-prev.png" alt="返回" /></i>
+    <i class="task6-header-right"><img src="images/close.png" alt="关闭" /></i>
+    <span class="task6-header-title">法官日记</span>
+</header>
+<div class="task6-game">
+    <div class="task6-game-body">
+        <div class="task6-game-day">
+            <i><img src="images/game-day-right.png"></i>
+            <span id="game-day">{{gameDay}}</span>
+        </div>
+        <div class="task6-game-content">
+            <div class="task6-game-entry" ng-click="decide()">
+                杀手杀人
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-entry" ng-click="gameClose()">
+                警察验人
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-entry" ng-click="gameClose()">
+                狙击狙人
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-entry task6-game-entry-margin" ng-click="gameClose()">
+                医生救人
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-entry" ng-click="gameClose()">
+                亡灵发表遗言
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-entry" ng-click="gameClose()">
+                玩家依次发言
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-entry" ng-click="gameClose()">
+                投票
+                <div class="task6-game-entry-arrows"></div>
+            </div>
+            <div class="task6-game-time">
+                <img src="images/game-time.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>

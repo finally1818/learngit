@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>picJS</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        #wrap {
+            perspective:800px;
+        }
+
+        body {
+            background:#000;
+        }
+
+        .box {
+            position:relative;
+            width: 200px;
+            height: 280px;
+            margin:200px auto;
+            transform-style:preserve-3d;
+            transform:rotateX(0deg) rotateY(0deg);
+        }
+        .box img {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-shadow: 0 0 8px #f9f;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box" class="box">
+            <img src="imgs/ow1.jpg">
+            <img src="imgs/ow2.jpg">
+            <img src="imgs/ow3.jpg">
+            <img src="imgs/ow7.jpg">
+            <img src="imgs/ow8.jpg">
+            <img src="imgs/ow12.jpg">
+            <img src="imgs/ow14.jpg">
+            <img src="imgs/ow15.jpg">
+            <img src="imgs/ow16.jpg">
+            <img src="imgs/ow19.jpg">
+            <img src="imgs/ow21.jpg">
+            <img src="imgs/ow5.jpg">
+        </div>
+    </div>
+
+    <script>
+        window.onload=function() {
+            var oImg = document.getElementsByTagName('img');
+            var oBox = document.getElementsByClassName('box')[0];
+            var oImgLength = oImg.length;
+            var oDeg = 360 / oImgLength;
+            var nowX, nowY, minuX, minuY, roX = 0, roY = 0, timer;
+            for (var i = 0; i < oImgLength; i++) {
+                oImg[i].style.transform = 'rotateY(' + oDeg * i + 'deg)' + 'translateZ(430px)';
+                oImg[i].style.transition = 'transform 1s';
+            }
+
+            Top();
+            window.onresize = Top();
+            function Top() {
+                var wH = document.documentElement.clientHeight;
+                oBox.style.marginTop = wH / 2 - 170 + 'px';
+            }
+
+            document.onmousedown = function (e) {
+                e = e || window.event;
+                var lastX = e.clientX;
+                var lastY = e.clientY;
+                this.onmousemove = function (e) {
+                    e = e || window.event;
+                    clearInterval(timer);
+                    nowX = e.clientX;
+                    nowY = e.clientY;
+                    minuX = nowX - lastX;
+                    minuY = nowY - lastY;
+                    roX += minuX * 0.15;
+                    roY -= minuY * 0.15;
+                    oBox.style.transform = 'rotateY(' + roX + 'deg)' + 'rotateX(' + roY + 'deg)';
+                    lastX = nowX;
+                    lastY = nowY;
+                };
+
+                this.onmouseup = function() {
+                    this.onmousemove = null;
+                    timer = setInterval(function() {
+                        minuX *= 0.95;
+                        minuY *= 0.95;
+                        roX += minuX* 0.1;
+                        roY -= minuY* 0.1;
+                        oBox.style.transform =
+                                'rotateY(' + roX + 'deg)' +
+                                'rotateX(' + roY + 'deg)';
+                        if (Math.abs(minuX) < 0.1 && Math.abs(minuY) < 0.1) {
+                            clearInterval(timer)
+                        }
+                    }, 13)
+                };
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

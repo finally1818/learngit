@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js任务2简单模式设置页面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/js-task02-3.css">
+
+</head>
+<body>
+    <header class="header">
+        <i class="header-left"><img src="images/header-prev.png" alt="返回"  /></i>
+        <i class="header-right"><img src="images/header-query.png" alt="疑问" /></i>
+        <span class="header-title">参数设置</span>
+    </header>
+    <div class="game-body">
+        <div class="gamers">
+            <span class="gamers-title">玩<br/>家<br/>配<br/>比</span>
+            <div>
+                <ul id="players" class="gamers-info">
+
+                </ul>
+                <button id="button" class="gamers-button" type="button">
+                    点击设置
+                    <i class="gamers-button-img"><img src="images/import.png" alt=""  /></i>
+                </button>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <label class="game-word">
+            <input type="text" class="game-word-group" placeholder="水民词组">
+            <input type="text" class="game-word-group" placeholder="幽灵词组">
+        </label>
+        <label class="game-num">
+            <span>玩家人数</span>
+            <input type="text" id="num" class="game-num-text" value="6">
+            <span>人</span>
+        </label>
+        <div class="game-bar">
+            <div id="sub" class="game-bar-sub" ><img src="images/game-bar-.png" alt="-"></div>
+            <label>
+                <input type="range" id="progress" class="game-bar-progress" min="6" max="18" value="6" >
+            </label>
+            <div id="add" class="game-bar-add" ><img src="images/game-bar+.png" alt="+"></div>
+        </div>
+        <a id="goDraw" class="game-deal" >去发牌</a>
+    </div>
+
+
+<script src="js/js-task02-3.js"></script>
+</body>
+</html>

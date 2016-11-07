@@ -1,0 +1,27 @@
+
+    <header class="task9-header">
+        <i class="task9-header-left"><img src="images/set.png" alt="更多" /></i>
+        <i class="task9-header-right"><img src="images/close.png" alt="" /></i>
+        <span class="task9-header-title">投票</span>
+    </header>
+    <div class="task9-game-content">
+        <div class="task9-game-header">
+            <a class="task9-game-header-music" href=""><img src="images/music.png" alt="music"/></a>
+            <span class="task9-game-header-text">发言讨论结束，大家请投票</span>
+            <div class="task9-game-header-arrows"></div>
+        </div>
+        <div class="task9-game-body">
+            <span class="task9-game-text">点击得票数最多的头像</span>
+            <div id="game-zone" class="task9-game-zone">
+                <div class="task9-game-zone-gamer {{vote.killClick}} {{vote.opacity}}" ng-repeat="vote in playersText" ng-click="gameKill($index)">
+                    <div class="task9-gamer-name ">{{vote.job}}</div>
+                    <div class="task9-gamer-num">{{vote.Num}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="task9-bottom"></div>
+    </div>
+    <footer class="task9-footer">
+        <a id="game-deal" class="task9-game-deal" ng-click="decide()">投死</a>
+    </footer>
+

@@ -1,0 +1,121 @@
+
+/*---header-----------------------------------------------------*/
+.header {
+    background: #29bde0;            /*底色29bed0*/
+    padding: 1.375rem 0 1.375rem 1.375rem;         /*上下左内边距22px*/
+}
+
+.header-set {
+	width: 2.125rem;
+	border-top: 0.25rem solid #FFFFFF;
+	border-bottom: 0.25rem solid #FFFFFF;
+	padding: 0.5rem 0;          /*上下外边距8px；左右外边距0*/
+	margin: 0;
+	cursor: pointer;
+}
+
+.header-set-m{
+    background: #FFF;           /*底色#ffffff*/
+    height: 0.25rem;          /*高4px*/
+}
+
+.container {
+    width: 35.625rem;         /*宽度570px*/
+    overflow:hidden;
+}
+/*---body----------------------------------------------------*/
+.homepage {
+    position: relative;
+    background: #f0f0f0;            /*底色f0f0f0*/
+    padding: 1.625rem 0 3.875rem;           /*上内边距26px，下内边距62px*/
+}
+
+.homepage-header {
+	position: relative;
+	width: 33.75rem;
+	height: 7.25rem;
+    background: #fff;           /*底色ffffff*/
+    border: 0.0625rem solid #c9c9c9;          /*边框1px，实线，颜色c9c9c9*/
+    text-align: center;         /*文本居中*/
+    margin-bottom: 1.625rem;           /*下外边距26px*/
+	padding: 0 0.875rem;
+}
+
+.headline {
+    font-size: 2.1875rem;          /*字体大小35px*/
+    color: #9a9a9a;         /*字体颜色9a9a9a*/
+    line-height: 7.25rem;
+}
+
+.homepage-return {
+	float: right;         /*绝对定位*/
+	margin: 2.375rem 0;
+	cursor: pointer;
+}
+
+.homepage-game {
+    background: #fff;           /*底色*/
+    border: 0.0625rem solid #d0d0d0;          /*边框宽1px，实线，颜色*/
+}
+
+.game-name {
+    font-size: 2.375rem;           /*字体大小38px*/
+    color: #fbb435;             /*字体颜色*/
+    line-height: 5.625rem;
+    text-align: center;             /*文本居中*/
+    border-bottom: 0.125rem solid #fbb435;           /*底边框宽2px，实线，颜色*/
+	padding: 0 0.5rem;
+}
+
+.game-box {
+    margin: 1.875rem 3.375rem 0;            /*上外边距30px，左右外边距54px，*/
+    text-align: center;         /*文本居中*/
+}
+
+.game-type a {
+    font-size: 2rem;             /*字体大小32px*/
+    color: #fff;                /*字体颜色*/
+	line-height: 8.375rem;
+    background: #69d1e9;        /*背景颜色*/
+    outline: none;              /*outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用*/
+    cursor: pointer;            /*光标变成小手*/
+}
+
+.gamers {
+    font-size: 1.5rem;          /*字体大小24px*/
+    color: #787878;
+    line-height: 4.875rem;
+}
+
+.next {
+    float: right;
+    width: 0;               /*CSS三角形制作*/
+    height: 0;
+    border-top: 1.75rem solid transparent;            /*测量三角形宽度26px，高度56px。实际还原top：26px，bottom：26px，left：28px，right：28px*/
+    border-left: 1.625rem  solid #fbb435;
+    border-bottom: 1.75rem solid transparent;
+	margin: 23.625rem 0.5rem 0 0;
+}
+
+.btn-group {
+    font-size: 0;
+    padding-left: 39.47%;       /*左内边距225px，btn-group实际宽度剩余345*/
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;          /*设置为行内区块元素，可以设置高度宽度*/
+    margin-left: 2.9%;          /*左外边距为10px，每个点间距10px*/
+    margin-bottom: 2.32%;           /*下外边距8px*/
+    padding: 2.61%;             /*内边距为9px，即为半径*/
+    background: #f0f0f0;
+    border-radius: 50%;         /*圆角边框*/
+}
+
+.active {
+    background: #69d1e9;
+}
+
+.btn:hover {
+    background: #69d1e9;
+}

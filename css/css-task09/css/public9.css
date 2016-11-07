@@ -1,0 +1,144 @@
+
+body {
+    width: 100%;
+    background: #ffffff;
+}
+
+.public-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.public-header {
+    height: 40px;
+    background: #1d7ad9;
+}
+
+.header-loginbar {
+    float: right;
+    width: 54px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    border-left: 1px solid #ffffff;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.header-loginbar:hover {
+    width: 104px;;
+    color: #000;
+    background: #ffffff;
+}
+
+.header-border {
+    border-right: 1px solid #ffffff;
+}
+
+.header-hotline {
+    line-height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.public-nav {
+    height: 47px;
+    background: #f9f9f9;
+    padding: 28px 0 25px ;
+    /*
+    -webkit-box-sizing: border-box; -------------IE不兼容？！
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    */
+}
+
+.nav {
+    float: right;
+    padding: 14px 18px;
+    margin-left: 60px;
+    font-size: 16px;
+    color: #333333;
+    background: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #e6e6e6;
+}
+
+.nav:hover {
+    color: #FFFFFF;
+    background: #1d7ad9;
+}
+
+/*---------------------------------------------------------------------*/
+
+.public-footer {
+    background: #f9f9f9;
+}
+
+.footer-col {
+    height: 90px;
+    padding: 64px 0 56px;
+    /*
+    -webkit-box-sizing: border-box; -------------IE不兼容？！
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    */
+}
+
+.footer-col-l {
+    float: left;
+    width: 290px;
+    margin-right: 180px;
+    line-height: 38px;
+    font-size: 18px;
+    color: #999;
+}
+
+.footer-col-r {
+    float: left;
+    width: 285px;
+    margin-right: 200px;
+}
+
+.footer-col-r a {
+    display: inline-block;
+    line-height: 38px;
+    font-size: 14px;
+    color: #999;
+    padding: 6px 35px 0 0;
+}
+
+.footer-col-r a:hover {
+    color: #1d7ad9;
+}
+
+.footer-contact {
+    float: left;
+    width: 245px;
+}
+
+.contact {
+    float: left;
+    line-height: 31px;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-contact i {
+    float: right;
+}
+
+.footer-copyright {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #1d7ad9;
+}

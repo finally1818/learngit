@@ -1,0 +1,106 @@
+
+/*---header----------------------------------*/
+.header {
+	width: 100%;
+	height: 5.625rem;
+	background: #29bde0;
+	text-align: center;
+	border-bottom: 0.0625rem solid #74d4eb;
+}
+
+.header-left {
+	float: left;
+	display: block;
+	padding: 1.6875rem 0 1.125rem 1.25rem;
+	cursor: pointer;
+}
+
+.header-right {
+	float: right;
+	display: block;
+	margin: 1.8rem 1.25rem 0.875rem 0;
+	cursor: pointer;
+}
+
+.header-title {
+	line-height: 5.625rem;
+	font-size: 2.125rem;
+	color: #FFFFFF;
+}
+
+/*---body------------------------------------*/
+
+.game-body {
+	background: #29bde0;
+	padding: 5.25rem 4.6875rem 3.75rem;
+}
+
+.game-draw {
+	position: relative;
+	width: 28.25rem;
+	height: 40.25rem;
+	border: 0.375rem solid #FFFFFF;
+	margin-bottom: 7.625rem;
+	background: #ffedc5;
+	text-align: center;
+}
+
+#game-img {
+	display: inline-block;
+	margin: 11.25rem 0 1.625rem;
+}
+
+.game-num-frame {
+	position: absolute;
+	top: -2.25rem;
+	left: 11.8125rem;
+	width: 4.25rem;
+	height: 4.25rem;
+	border: 0.1875rem solid #ffedc5;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+
+#game-num {
+	font-size: 2.5rem;
+	color: #f56b81;
+	font-weight: bold;
+	text-align: center;
+	display: block;
+	margin: 0.5rem;
+}
+
+#game-role {
+	font-size: 2.5rem;
+	color: #29bde0;
+	line-height: 3.5rem;
+	font-weight: bold;
+}
+
+#game-word {
+	font-size: 2.5rem;
+	color: #f56b81;
+	line-height: 3.5rem;
+	font-weight: bold;
+	margin-bottom: 1.375rem;
+}
+
+#game-info {
+	text-align: left;
+	font-size: 1.625rem;
+	color: #fca000;
+	/*border-top: 0.125rem solid #FFFFFF;*/
+	padding: 2.1875rem 1.75rem 0;
+}
+
+.game-deal {
+	background: #fab344;
+	color: #FFFFFF;
+	font-size: 2.5rem;
+	text-align: center;
+	height: 5.3125rem;
+	line-height: 5.3125rem;
+	cursor: pointer;
+}

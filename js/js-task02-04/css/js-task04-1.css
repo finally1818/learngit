@@ -1,0 +1,98 @@
+
+/*---header----------------------------------*/
+.header {
+	width: 100%;
+	height: 5.625rem;
+	background: #29bde0;
+	text-align: center;
+	border-bottom: 0.0625rem solid #74d4eb;
+}
+
+.header-left {
+	float: left;
+	display: block;
+	padding: 1.6875rem 0 1.125rem 1.25rem;
+	cursor: pointer;
+}
+
+.header-right {
+	float: right;
+	display: block;
+	margin: 1.8rem 1.25rem 0.875rem 0;
+	cursor: pointer;
+}
+
+.header-title {
+	line-height: 5.625rem;
+	font-size: 2.125rem;
+	color: #FFFFFF;
+}
+
+/*---body------------------------------------*/
+.game-diary {
+	min-height: 63.125rem;
+	background: #29bde0;
+	padding: 0 0.625rem;
+}
+
+.game-diary-gamer {
+	display: inline-block;
+	width: 7.875rem;
+	height: 7.875rem;
+	border: 0.3125rem solid #FFFFFF;
+	background: url("../images/background-logo.png") no-repeat;
+	margin: 4rem 2.1rem 0.625rem;
+	cursor: pointer;
+	text-align: center;
+}
+
+.game-diary-identity {
+	height: 6.125rem;
+	line-height: 6.125rem;
+	font-size: 1.875rem;
+	color: rgba(86,86,86,1);
+	background: rgba(245,201,123,1)
+}
+
+/*.game-diary-gamer:hover .game-diary-identity {
+	color: rgba(86,86,86,1);
+	background: rgba(245,201,123,1)
+}
+
+.game-diary-gamer:hover .game-diary-num {
+	background: rgba(131,176,154,1);
+}*/
+
+.game-diary-num {
+	height: 1.75rem;
+	font-size: 1.4225rem;
+	color: #FFFFFF;
+	/*background: rgba(41,189,224,0.5);*/
+	background: rgba(131,176,154,1);
+}
+
+.bottom {
+	width: 40rem;
+	height: 12.3125rem;
+}
+
+/*---footer----------------------------------------------*/
+.footer {
+	position: fixed;
+	width: 40rem;
+	bottom: 0;
+	background: #29bde0;
+	border-top: 0.125rem solid #FFFFFF;
+}
+
+.game-start {
+	width: 30.625rem;
+	margin: 3.125rem 4.6875rem 3.75rem;
+	background: #fab344;
+	color: #FFFFFF;
+	font-size: 2.5rem;
+	text-align: center;
+	height: 5.3125rem;
+	line-height: 5.3125rem;
+	cursor: pointer;
+}

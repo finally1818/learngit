@@ -1,0 +1,174 @@
+/*重置reset*/
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", monospace;
+}
+
+body {
+    background: #29bde0;
+}
+
+ol, ul, li {
+    list-style: none;           /*列表样式无*/
+}
+
+a {
+    display: block;         /*设置为块级元素*/
+    text-decoration: none;          /*文字修饰为无，一般用于设置清楚超链接的默认下划线*/
+}
+
+img {
+    display: block;         /*设置为块级元素*/
+    border: none;           /*设置为无边框*/
+}
+
+.clearfloat:after {
+    display: block;         /*设置为块级元素*/
+    clear: both;            /*清除浮动*/
+    content: '';            /*:after{content:'';}固定格式*/
+    visibility: hidden;             /*将元素隐藏*/
+    height: 0;              /*不设置高度*/
+}
+
+
+/*头部header------------------------------------------------------------------------------*/
+.header {
+    text-align: center;             /*文本居中*/
+}
+
+
+.house {
+    display: inline;                /*设置对象做为行内元素显示*/
+    width: 7.97%;                   /*宽度51px*/
+    padding: 3.28% 3.13%;           /*上下内边距21px，左右内边距20px*/
+    float: left;                   /*左浮动*/
+    overflow: hidden;
+}
+
+.message {
+    display: inline;                /*设置对象做为行内元素显示*/
+    width: 6.25%;                   /*宽度40px*/
+    padding: 3.59% 3.13%;           /*上下内边距23px，左右内边距20px*/
+    float: right;                   /*右浮动*/
+    overflow: hidden;
+}
+
+.result {
+    display: block;                 /*设置为块级元素*/
+    font-size: 5.31vw;              /*字体大小34px*/
+    color: #fff;
+    padding: 3.44% 0;               /*上下内边距22px*/
+}
+
+/*主体部分------------------------------------------------------------------------*/
+.mainbody {
+    border-top: 1px solid #74d4eb;          /*上边框*/
+    padding-top: 3.75%;             /*上内边距24px*/
+}
+
+.cup {
+    padding: 0 10.94%;              /*左右内边距为70px*/
+}
+
+.victory {
+    display: block;                 /*设置为块级元素*/
+    position:absolute;              /*绝对定位*/
+    margin-top: -15.5%;             /*F12调试*/
+    left: 29.5%;                    /*F12调试*/
+    font-size: 10vw;               /*字体大小48px*/
+    color: #FFFFFF;
+    font-weight: bold;              /*字体加粗*/
+}
+
+.congratulation {
+    display: block;
+    padding: 3.44% 10.94% 8.5%;           /*上内边距22px，下内边距54，左右内边距70px*/
+    font-size: 5.16vw;                     /*33px*/
+    color: #ffc865;
+}
+
+.explain {
+    font-size: 4.06vw;               /*字体大小26px*/
+    color: #fff;
+    padding: 0 10.94% 3.75%;        /*下内边距24px*/
+    border-bottom: 1px solid #31a8c4;           /*下边框线*/
+}
+
+.game {
+    padding: 2.19% 10.94% 5.31%;              /*14px  70px   34px*/
+    background: #FFFFFF;
+    border-top: 1px solid #dddddd;              /*上边框线*/
+    border-bottom: 1px solid #dddddd;           /*下边框线*/
+}
+
+.gameday {
+    display: block;
+    float: left;                        /*左浮动*/
+    padding-bottom: 4.06%;              /*26px*/
+    font-size: 4.69vw;               /*30px*/
+    color: #515151;
+}
+
+
+.gametime {
+    float: right;                   /*右浮动*/
+    padding-right: 5.16%;                  /*33px*/
+    padding-top: 1.56%;              /*10px*/
+    font-size: 3.13vw;              /*20px*/
+    color: #c7c7c7;
+
+}
+
+.gameplay {
+    display: block;
+    font-size: 4.06vw;             /*26px*/
+    color: #a6a6a6;
+    clear: both;                    /*清除浮动*/
+}
+
+.bottom {
+    width:100%;
+    padding-bottom: 25%;
+    clear: both;
+    background: #FFFFFF;
+}
+
+/*底部----------------------------------------------------------------------------------------------*/
+.footer {
+    position:fixed;                         /*绝对定位的元素,相对于浏览器窗口进行定位*/
+    width:100%;                             /*浏览器宽度*/
+    bottom: 0;                              /*距离浏览器底部0*/
+    padding: 3.75% 3.75% 3.13%;               /*24px  24px  20px   24px*/
+    background: rgba(41,189,224,0.5);           /*rgba色 0.5透明度*/
+}
+
+.footer-again,
+.footer-share {
+    float: left;
+    width: 42.19%;                  /*270px*/
+    padding: 3.75% 0;               /*24px*/
+    margin-right: 7.8%;             /*50px*/
+    text-align: center;             /*文本居中*/
+    font-size: 6.25vw;                 /*40px*/
+    color: #fff;
+    -webkit-border-radius: 1.25vw;
+    -moz-border-radius: 1.25vw;
+    border-radius: 1.25vw;              /*圆角边框*/
+    outline: none;
+
+    /*
+    border-top-left-radius: 3% 9.42%;
+    border-top-right-radius: 3% 9.42%;
+    border-bottom-right-radius: 3% 9.42%;
+    border-bottom-left-radius: 3% 9.42%;
+    */
+}
+
+.footer-again {
+    background: #f66f6f;
+}
+
+.footer-share {
+    background: #fbb435;
+}

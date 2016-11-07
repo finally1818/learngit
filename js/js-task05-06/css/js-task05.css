@@ -1,0 +1,101 @@
+/*----reset------------------------------------------*/
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea, header, footer {
+	margin: 0 auto;
+	padding: 0;
+	font-family: "微软雅黑", monospace;
+	font-size: 16px;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+img {
+	border: none;
+	display: inline-block;
+}
+
+label {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+/*----header------------------------------------------*/
+.apply {
+	width: 1000px;
+	border: 1px solid #000000;
+	margin-top: 20px;
+	padding: 30px;
+}
+
+.input-size {
+	width: 860px;
+	height: 25px;
+}
+
+.apply-text {
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.regular {
+	margin: 0 0 10px 130px;
+	height: 15px;
+	font-size: 12px;
+	color: #c9c9c9;
+
+}
+
+.wish {
+	height: 172px;
+	padding-top: 8px;
+}
+
+.wish span{
+	float: left;
+	display: block;
+	width: 125px;
+	height: 29px;
+	line-height: 29px
+}
+
+.study-type {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+#wish {
+	width: 862px;
+	height: 100px;
+	float: left;
+}
+
+.apply-button {
+	width: 100px;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 0 30px;
+	background: #FFFFFF;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}
+
+#result {
+	display: block;
+	width: 1050px;
+}

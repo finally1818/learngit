@@ -1,0 +1,23 @@
+
+<header class="task8-header">
+    <i class="task8-header-left"><img src="images/set.png" alt="更多" /></i>
+    <i class="task8-header-right"><img src="images/close.png" alt="关闭" /></i>
+    <span class="task8-header-title">黑夜解密</span>
+</header>
+<div class="task8-game-decode">
+    <div class="task8-game-decode-music">
+        <div class="task8-game-decode-triangle"></div>
+    </div>
+    <div id="game-decode-deathKill">
+        <div class="task8-game-decode-text" ng-repeat="look in deathList">{{look.list}}</div>
+    </div>
+    <footer class="task8-game-vote">
+        <div ng-if="show">
+            <div class="task8-game-vote-speak">亡灵发表遗言</div>
+            <i class="task8-game-vote-down"><img src="images/footer-down.png" alt=""></i>
+            <div class="task8-game-vote-speak">玩家依次发言讨论</div>
+            <i class="task8-game-vote-down"><img src="images/footer-down.png" alt=""></i>
+        </div>
+        <div id="game-vote-go" class="task8-game-vote-go" ng-click="decide()">{{gameGo}}</div>
+    </footer>
+</div>

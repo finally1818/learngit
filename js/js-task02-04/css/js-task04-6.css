@@ -1,0 +1,134 @@
+
+/*---header----------------------------------*/
+.header {
+	width: 100%;
+	height: 5.625rem;
+	background: #29bde0;
+	text-align: center;
+	border-bottom: 0.0625rem solid #74d4eb;
+}
+
+.header-left {
+	float: left;
+	display: block;
+	padding: 1.625rem 0 1.125rem 1.25rem;
+	cursor: pointer;
+}
+
+.header-right {
+	float: right;
+	display: block;
+	margin: 1.8rem 1.25rem 0.875rem 0;
+	cursor: pointer;
+}
+
+.header-title {
+	line-height: 5.625rem;
+	font-size: 2.125rem;
+	color: #FFFFFF;
+}
+/*主体部分------------------------------------------------------------------------*/
+.game-content {
+	position: relative;
+    padding-top: 1.5rem;             /*上内边距24px*/
+	text-align: center;
+	background: #29bde0;
+}
+
+.game-cup-win {
+    display: block;                 /*设置为块级元素*/
+    position:absolute;              /*绝对定位*/
+    top: 9.68rem;                     /*F12调试*/
+    left: 14rem;                    /*F12调试*/
+    font-size: 3rem;               /*字体大小48px*/
+    color: #FFFFFF;
+}
+
+.game-cup-text {
+    display: block;
+    padding: 1.375rem 4.3rem 3.375rem;           /*上内边距22px，下内边距54，左右内边距70px*/
+    font-size: 2.0625rem;                     /*33px*/
+    color: #ffc865;
+	text-align: left;
+}
+
+.game-result {
+    font-size: 1.625rem;               /*字体大小26px*/
+    color: #fff;
+    padding: 0 5rem 1.5rem;        /*下内边距24px*/
+    border-bottom: 1px solid #31a8c4;           /*下边框线*/
+	text-align: left;
+}
+
+.game-course {
+    padding: 0.875rem 4.3rem 2.125rem;              /*14px  70px   34px*/
+    background: #FFFFFF;
+    border-top: 0.0625rem solid #dddddd;              /*上边框线*/
+    border-bottom: 0.0625rem solid #dddddd;           /*下边框线*/
+}
+
+.game-course-day {
+    display: block;
+    float: left;                        /*左浮动*/
+    padding-bottom: 1.625rem;              /*26px*/
+    font-size: 1.875rem;               /*30px*/
+    color: #515151;
+}
+
+
+.game-course-time {
+    float: right;                   /*右浮动*/
+    padding-top: 0.625rem;              /*10px*/
+    font-size: 1.25rem;              /*20px*/
+    color: #c7c7c7;
+
+}
+
+.game-course-text {
+    display: block;
+    font-size: 1.625rem;             /*26px*/
+    color: #a6a6a6;
+    clear: both;                    /*清除浮动*/
+	text-align: left;
+}
+
+.bottom {
+    width:100%;
+    padding-bottom: 25%;
+    clear: both;
+    background: #FFFFFF;
+}
+
+/*底部----------------------------------------------------------------------------------------------*/
+.footer {
+    position:fixed;                         /*绝对定位的元素,相对于浏览器窗口进行定位*/
+    bottom: 0;                              /*距离浏览器底部0*/
+    padding: 1.5rem 0 1.25rem;               /*24px  24px  20px   24px*/
+    background: rgba(41,189,224,0.5);           /*rgba色 0.5透明度*/
+}
+
+.footer-again,
+.footer-share {
+    float: left;
+    width: 16.875rem;                  /*270px*/
+	height: 6.25rem;
+	line-height: 6.25rem;
+    margin: 0 1.5625rem;             /*50px*/
+    text-align: center;             /*文本居中*/
+    font-size: 2.5rem;                 /*40px*/
+    color: #fff;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;              /*圆角边框*/
+    outline: none;
+}
+
+.footer-again {
+	cursor: pointer;
+    background: #f66f6f;
+}
+
+.footer-share {
+	cursor: pointer;
+    background: #fbb435;
+}

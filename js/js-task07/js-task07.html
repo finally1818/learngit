@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS任务7</title>
+    <script>
+        if (location.href.toString().indexOf('file://localhost/') == 0) {
+            location.href = location.href.toString().replace('file://localhost/', 'file:///');
+        }
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body ng-app="myApp">
+<div>
+    <div ui-view=""></div>
+</div>
+<script src="angularJS/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="angularJS/angular-ui-router.min.js"></script>
+<script src="angularJS/ocLazyLoad.min.js"></script>
+</body>
+</html>

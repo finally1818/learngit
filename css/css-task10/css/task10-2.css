@@ -1,0 +1,111 @@
+
+.enterprises-nav {
+    margin: 1.75rem 0;
+    font-size: 1rem;
+}
+
+.main-nav {
+    color: #000;
+    cursor: pointer;
+}
+
+.sub-nav {
+    color: #29b078;
+    cursor: pointer;
+}
+
+.enterprises {
+    box-shadow: 0 0.125rem 0.125rem #ededed;
+    border: 0.0625rem solid #ededed;
+    border-radius: 0.5rem;
+    background: #ffffff;
+    margin-bottom: 2.25rem;
+}
+
+.enterprises-title {
+    font-size: 1rem;
+    padding: 1.375rem;
+    margin: 0;
+    border-bottom: 0.0625rem solid #e6e6e6;
+}
+
+.enterprises-name {
+    display: block;
+    margin: 2.1875rem 4.275rem;
+}
+
+.enterprises-name-active a {
+    display: inline-block;
+    padding-left: 0.375rem;
+    color: #ff650e !important;
+}
+
+.enterprises-name-active i {
+    background: #FDAE82;
+}
+
+.enterprises-name i, .list-name i {
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    border: 0.125rem solid #FDAE82;
+    border-radius: 50%;
+}
+
+.enterprises-name a, .list-name a {
+    display: inline-block;
+    padding-left: 0.375rem;
+    color: #29b078;
+}
+
+.enterprises-name:hover i, .list-name:hover i{
+    background: #FDAE82;
+}
+
+.enterprises-name:hover a, .list-name:hover a {
+    color: #ff650e;
+    border: none;
+}
+
+@media screen and (max-width: 767px) {
+    .enterprises {
+        display: none;
+    }
+}
+
+.enterprises-btn {
+    margin-bottom: 1rem;
+}
+
+.content {
+    font-size: 0.875rem;
+    color: #999;
+    line-height: 1.875rem;
+    box-shadow: 0 0.125rem 0.125rem #ededed;
+    border: 0.0625rem solid #ededed;
+    border-radius: 0.375rem;
+    background: #ffffff;
+    margin-bottom: 14.5rem;
+}
+
+.content p {
+    text-indent: 0.125rem;
+}
+
+.tudo-intro, .tudo-logo {
+    padding: 0 3.75rem;
+}
+
+.tudo-intro p{
+    margin: 1.25rem 0;
+}
+
+.tudo-content {
+    border-top: 0.0625rem solid #e6e6e6;
+    padding: 0 3.75rem;
+}
+
+.tudo-content p {
+    display: block;
+    margin: 2.1875rem 0;
+}

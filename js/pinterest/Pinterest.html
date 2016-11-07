@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width:1040px;
+            height:300px;
+            margin: 20px auto;
+        }
+        .box ul li {
+            list-style: none;
+            float:left;
+            width:250px;
+            margin: 5px;
+        }
+        .box ul li div {
+            padding: 5px;
+        }
+        .box ul li img{
+            width:100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/jquery-3.0.0.js"></script>
+    <script>
+        var i = 0;
+        var arr = [
+            {src:'images/ow1.jpg'},
+            {src:'images/ow2.jpg'},
+            {src:'images/ow3.jpg'},
+            {src:'images/ow4.jpg'},
+            {src:'images/ow5.jpg'},
+            {src:'images/ow6.jpg'},
+            {src:'images/ow7.jpg'},
+            {src:'images/ow8.jpg'},
+            {src:'images/ow9.jpg'},
+            {src:'images/ow10.jpg'},
+            {src:'images/ow11.jpg'},
+            {src:'images/ow12.jpg'},
+            {src:'images/ow13.jpg'},
+            {src:'images/ow14.jpg'},
+            {src:'images/ow15.jpg'},
+            {src:'images/ow16.jpg'},
+            {src:'images/ow17.jpg'},
+            {src:'images/ow18.jpg'},
+            {src:'images/ow19.jpg'},
+            {src:'images/ow20.jpg'},
+            {src:'images/ow21.jpg'}
+        ];
+
+        function create() {
+            var oDiv = document.createElement('div');
+            var oImg = new Image();
+            oImg.src = arr[i%arr.length].src;
+            console.log(i);
+            oDiv.appendChild(oImg);
+            getList($('.box ul li')).append(oDiv);
+        }
+
+        function getList(obj) {
+            var length = obj.length;
+            var h = Infinity;       //无穷大
+            var arrN = '';
+            for (var i = 0; i<length; i++) {
+                if (obj.eq(i).height() < h) {
+                    h = obj.eq(i).height();
+                    arrN = obj.eq(i);
+                }
+            }
+            return arrN;
+        }
+
+        $(window).resize(function() {
+            windoth();
+        });
+
+
+        addImg();
+        function addImg() {
+            if (i<arr.length-1) {
+                for(;i<arr.length;i++){
+                    create();
+                }
+            } else {
+                var num = i;
+                for(;i<num+3;i++) {
+                    create();
+                }
+            }
+        }
+        windoth();
+        function windoth() {
+            var sH = '';
+            var dH = '';
+            var wH = $(window).height();
+            console.log(wH);
+            $(window).scroll(function() {
+                sH = $(window).scrollTop();
+                dH = $(document).height();
+                if (sH + wH + 50 > dH) {
+                    addImg();
+                }
+            });
+        }
+
+
+        /*
+        * 文档高度
+        * 滚动高度
+        * 窗口高度
+        * 滚动高度 + 窗口高度 <= 文档高度*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

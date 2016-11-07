@@ -1,0 +1,147 @@
+/*重置reset*/
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", monospace;
+}
+
+ol, ul, li {
+    list-style: none;           /*列表样式无*/
+}
+
+a {
+    display: block;         /*设置为块级元素*/
+    text-decoration: none;          /*文字修饰为无，一般用于设置清楚超链接的默认下划线*/
+}
+
+img {
+    display: block;         /*设置为块级元素*/
+    border: none;           /*设置为无边框*/
+}
+
+.clearfloat:after {
+    display: block;         /*设置为块级元素*/
+    clear: both;            /*清除浮动*/
+    content: '';            /*:after{content:'';}固定格式*/
+    visibility: hidden;             /*将元素隐藏*/
+    height: 0;              /*不设置高度*/
+}
+
+/*头部header-------------------------------------------------------------------------------------*/
+.header {
+    background: #29bde0;            /*底色29bed0*/
+    padding: 3.44% 0 3.44% 3.44%;         /*上下左内边距22px*/
+}
+
+.header-set-t,
+.header-set-m,
+.header-set-b {
+    width: 5.31%;           /*宽度34px*/
+    background: #FFF;           /*底色#ffffff*/
+    padding:0.31% 0;          /*高4px*/
+}
+
+.header-set-m {
+    margin:1.25% 0;          /*上下外边距8px；左右外边距0*/
+}
+
+.container {
+    margin: 0 auto;         /*居中*/
+    width: 89.06%;         /*宽度570px*/
+    overflow:hidden;
+}
+/*主体部分mainbody--------------------------------------------------------------------------------*/
+.mainbody {
+    position: relative;
+    background: #f0f0f0;            /*底色f0f0f0*/
+    padding: 4.06% 0 9.69%;           /*上内边距26px，下内边距62px*/
+}
+
+.mainbody-header {
+    background: #fff;           /*底色ffffff*/
+    border: 1px solid #c9c9c9;          /*边框1px，实线，颜色c9c9c9*/
+    text-align: center;         /*文本居中*/
+    margin-bottom: 4.06%;           /*下外边距26px*/
+}
+
+.headline {
+    font-size: 5.47vw;          /*字体大小35px*/
+    color: #9a9a9a;         /*字体颜色9a9a9a*/
+    padding: 7.37% 0;            /*上下内边距42px*/
+}
+
+.return {
+    position: absolute;         /*绝对定位*/
+    top: 6.8%;               /*距离mainbody-header39px？？通过F12调试结果，暂不确定计算过程*/
+    right: 7.81%;           /*距离mainbody右边50px*/
+    width: 4.21%;           /*宽度24px*/
+}
+
+.mainbody-body {
+    background: #fff;           /*底色*/
+    border: 1px solid #d0d0d0;          /*边框宽1px，实线，颜色*/
+}
+
+.game-name {
+    font-size: 5.9vw;           /*字体大小38px*/
+    color: #fbb435;             /*字体颜色*/
+    padding: 5.26% 0;           /*上下内边距30px*/
+    text-align: center;             /*文本居中*/
+    border-bottom: 2px solid #fbb435;           /*底边框宽2px，实线，颜色*/
+}
+
+.game-box {
+    margin: 5.26% 9.47% 0;            /*上外边距30px，左右外边距54px，*/
+    text-align: center;         /*文本居中*/
+}
+
+.game-type button {
+    width: 100%;
+    font-size: 5vw;             /*字体大小32px*/
+    color: #fff;                /*字体颜色*/
+    padding: 9.3% 0 ;          /*上下内边距53px*/
+    background: #69d1e9;        /*背景颜色*/
+    outline: none;              /*outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用*/
+    cursor: pointer;            /*光标变成小手*/
+}
+
+.gamers {
+    font-size: 3.75vw;          /*字体大小24px*/
+    color: #787878;
+    padding: 4.56% 0;              /*上下内边距26px*/
+}
+
+.next {
+    position:absolute;          /*绝对定位*/
+    top: 55%;             /*F12调试结果，暂时不知道计算过程*/
+    right: 7.03%;           /*距离mainbody45px*/
+    width: 0;               /*CSS三角形制作*/
+    height: 0;
+    border-top: 4.38vw solid transparent;           /*测量三角形宽度26px，高度56px*/
+    border-left: 4.375vw solid #fbb435;             /*实际还原应该是宽度52px，高度28px*/
+    border-bottom: 4.38vw solid transparent;        /*相对于640PX*/
+
+}
+
+.btn-group {
+    font-size: 0;
+    padding-left: 39.47%;       /*左内边距225px，btn-group实际宽度剩余345*/
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;          /*设置为行内区块元素，可以设置高度宽度*/
+    margin-left: 2.9%;          /*左外边距为10px，每个点间距10px*/
+    margin-bottom: 2.32%;           /*下外边距8px*/
+    padding: 2.61%;             /*内边距为9px，即为半径*/
+    background: #f0f0f0;
+    border-radius: 50%;         /*圆角边框*/
+}
+
+.active {
+    background: #69d1e9;
+}
+
+.btn:hover {
+    background: #69d1e9;
+}
