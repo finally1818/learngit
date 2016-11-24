@@ -1,0 +1,16 @@
+
+<header class="task5-header">
+    <i class="task5-header-left"><img src="images/header-prev.png" alt="返回" /></i>
+    <i class="task5-header-right"><img src="images/close.png" alt="关闭" /></i>
+    <span class="task5-header-title">法官日记</span>
+</header>
+<div id="game-diary" class="task5-game-diary">
+    <div class="task5-game-diary-gamer" ng-repeat="diary in playersText">
+        <div class="task5-game-diary-identity">{{diary.job}}</div>
+        <div class="task5-game-diary-num">{{diary.Num}}</div>
+    </div>
+</div>
+<div class="task5-bottom"></div>
+<footer class="task5-footer">
+    <a id="game-start" class="task5-game-start" ng-click="decide()">开始游戏</a>
+</footer>

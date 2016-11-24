@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <meta name="Keywords" content="关键词,关键词">        <!--搜索引擎关键字-->
+    <meta name="Description" content="">            <!--内容提要-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        <!--手机端-->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "微软雅黑", monospace;
+        }
+        html {
+            height: 100%;
+        }
+        @keyframes show {
+            0%{
+                transform: rotateX(-180deg);
+                opacity: 0;
+            }
+            50%{
+                transform: rotateX(25deg);
+                opacity: 1;
+            }
+            60%{
+                transform: rotateX(-18deg);
+                opacity: 1;
+            }
+            70%{
+                transform: rotateX(12deg);
+                opacity: 1;
+            }
+            80%{
+                transform: rotateX(-8deg);
+                opacity: 1;
+            }
+            90%{
+                transform: rotateX(4deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateX(0deg);
+                opacity: 1;
+            }
+        }
+        @keyframes hide {
+            0%{
+                transform: rotateX(0deg);
+                opacity: 1;
+            }
+            100%{
+                transform: rotateX(180deg);
+                opacity: 0;
+            }
+        }
+        body {
+            background: radial-gradient(#FFFFFF,#000);
+        }
+        .warp {
+            width: 250px;
+            height: 349px;
+            margin: 100px auto;
+            position: relative;
+            transform-style: preserve-3d;/*设置3D空间*/
+            perspective: 1000px;/*景深,正常范围700px~1000px*/
+        }
+        input {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            outline: none;
+            position: absolute;
+            top: 50%;
+            margin: -30px;
+        }
+        #prev {
+            left: -60px;
+        }
+        #next {
+            right: -60px;
+        }
+        img {
+            width: 250px;
+            height: 349px;
+            position: absolute;
+            transform: rotateX(-180deg);
+            transform-origin: bottom;
+            opacity:0;
+        }
+        .show {
+            animation: 1s show;
+            transform: rotateX(0deg);
+            opacity: 1;
+        }
+        .hide {
+            animation: .8s hide;
+            transform: rotateX(-180deg);
+            opacity: 0;
+        }
+        .num {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            background: #00ff00;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            margin: -20px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!---->
+    <div id="warp" class="warp">
+        <input type="button" id="prev" value="上一张"/>
+        <input type="button" id="next" value="下一张"/>
+        <span id="num" class="num"></span>
+        <img class="show" src="images/ow1.jpg" alt="1">
+        <img class="hide" src="images/ow2.jpg" alt="2">
+        <img class="hide" src="images/ow3.jpg" alt="3">
+        <img class="hide" src="images/ow4.jpg" alt="4">
+        <img class="hide" src="images/ow5.jpg" alt="5">
+        <img class="hide" src="images/ow6.jpg" alt="6">
+        <img class="hide" src="images/ow7.jpg" alt="8">
+        <img class="hide" src="images/ow8.jpg" alt="8">
+        <img class="hide" src="images/ow9.jpg" alt="9">
+        <img class="hide" src="images/ow10.jpg" alt="10">
+        <img class="hide" src="images/ow11.jpg" alt="11">
+        <img class="hide" src="images/ow12.jpg" alt="12">
+        <img class="hide" src="images/ow13.jpg" alt="13">
+        <img class="hide" src="images/ow14.jpg" alt="14">
+        <img class="hide" src="images/ow15.jpg" alt="15">
+        <img class="hide" src="images/ow16.jpg" alt="16">
+        <img class="hide" src="images/ow17.jpg" alt="17">
+        <img class="hide" src="images/ow18.jpg" alt="18">
+        <img class="hide" src="images/ow19.jpg" alt="19">
+        <img class="hide" src="images/ow20.jpg" alt="20">
+        <img class="hide" src="images/ow21.jpg" alt="21">
+    </div>
+    <!---->
+    <script>
+        var oWarp = document.getElementById('warp');
+        var oPrev = document.getElementById('prev');
+        var oNext = document.getElementById('next');
+        var oImg = oWarp.getElementsByTagName('img');
+        var oNum = document.getElementById('num');
+        var now = 0;
+        var i = 1;
+        oNum.innerHTML = i;
+        oPrev.onclick = function() {
+            oImg[now].className = 'hide';
+            now--;
+            i--;
+            if (now < 0) {
+                now = oImg.length - 1;
+                i = oImg.length;
+            }
+            oNum.innerHTML = i;
+            oImg[now].className = 'show';
+        };
+        oNext.onclick = function() {
+            oImg[now].className = 'hide';
+            now++;
+            i++;
+            if (now > oImg.length - 1) {
+                now = 0;
+                i = 1;
+            }
+            oNum.innerHTML = i;
+            oImg[now].className = 'show';
+        }
+    </script>
+</body>
+</html>

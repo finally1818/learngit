@@ -58,10 +58,30 @@
     border-bottom-left-radius: 5px;
 }
 
+.subnav-action .subnav-bars{
+    background-color: rgba(255,127,2,1);
+}
+
+.subnav-action .subnav-bars-text {
+    color: rgba(255,127,2,1);
+}
+
+.subnav-action .subnav-bars-no {
+    position: absolute;
+    top: -10px;
+    left: 73px;
+    width: 17px;
+    height: 24px;
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+    padding-left: 7px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(255,127,2,1);
+}
+
 .subnav:hover .subnav-bars {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     background-color: rgba(255,127,2,1);
 }
 

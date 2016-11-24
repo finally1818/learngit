@@ -1,0 +1,44 @@
+<header class="task3-header">
+    <i class="task3-header-left"><img src="images/header-prev.png" alt="返回"  /></i>
+    <i class="task3-header-right"><img src="images/header-query.png" alt="疑问" /></i>
+    <span class="task3-header-title">参数设置</span>
+</header>
+<div class="task3-game-body">
+    <div class="task3-gamers">
+        <span class="task3-gamers-title">玩<br/>家<br/>配<br/>比</span>
+        <div>
+            <ul class="task3-gamers-info" >
+                <li class="task3-gamers-text" ng-repeat="player in playersText">
+                    <i ng-class="{true:'orange', false:'blue'}[player.isColor]"></i>
+                    {{player.job}}&nbsp;1&nbsp;人
+                </li>
+            </ul>
+            <button ng-click="Set()" class="task3-gamers-button" type="button">
+                点击设置
+                <i class="task3-gamers-button-img"><img src="images/import.png" alt=""  /></i>
+            </button>
+        </div>
+    </div>
+    <div class="task3-clear"></div>
+    <label class="task3-game-word">
+        <input type="text" class="task3-game-word-group" placeholder="水民词组">
+        <input type="text" class="task3-game-word-group" placeholder="幽灵词组">
+    </label>
+    <label class="task3-game-num">
+        <span>玩家人数</span>
+        <input type="text" class="task3-game-num-text" ng-model="Num" >
+        <span>人</span>
+    </label>
+    <div class="task3-game-bar">
+        <div ng-click="playSub()" class="task3-game-bar-sub" >
+            <img src="images/game-bar-.png" alt="-">
+        </div>
+        <label>
+            <input type="range" class="task3-game-bar-progress" min="6" max="18" ng-model="Num" >
+        </label>
+        <div ng-click="playAdd()" class="task3-game-bar-add" >
+            <img src="images/game-bar+.png" alt="+">
+        </div>
+    </div>
+    <a  ng-click="decide()" class="task3-game-deal" >去发牌</a>
+</div>

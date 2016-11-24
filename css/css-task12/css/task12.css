@@ -62,10 +62,36 @@
     border-bottom-left-radius: 0.3125rem;
 }
 
+.process-action .process-bars {
+    -webkit-border-top-left-radius: 0.3125rem;
+    -moz-border-top-left-radius: 0.3125rem;
+    border-top-left-radius: 0.3125rem;
+    -webkit-border-bottom-left-radius: 0.3125rem;
+    -moz-border-bottom-left-radius: 0.3125rem;
+    border-bottom-left-radius: 0.3125rem;
+    background-color: rgba(255,127,2,1);
+}
+
+.process-action .process-bars-no {
+    position: absolute;
+    top: -0.625rem;
+    left: 4.5625rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    vertical-align: middle;
+    color: rgba(255,255,255,1);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgba(255,127,2,1);
+}
+
+.process-action .process-bars-text {
+    color: rgba(255,127,2,1);
+}
+
 .process:hover .process-bars {
-    -webkit-border-radius: 0.3125rem;
-    -moz-border-radius: 0.3125rem;
-    border-radius: 0.3125rem;
     background-color: rgba(255,127,2,1);
 }
 

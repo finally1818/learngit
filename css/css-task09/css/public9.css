@@ -70,6 +70,11 @@ body {
     box-shadow: 1px 1px 1px #e6e6e6;
 }
 
+.nav-action {
+    color: #FFFFFF;
+    background: #1d7ad9 ;
+}
+
 .nav:hover {
     color: #FFFFFF;
     background: #1d7ad9;

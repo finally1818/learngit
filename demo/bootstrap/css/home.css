@@ -1,0 +1,260 @@
+
+.panel-item {
+    margin: 10.3rem 0 6rem;
+}
+
+.item-icon-1 {
+    display: inline-block;
+    width: 43px;
+    height: 62px;
+    margin-bottom: 2rem;
+    background: url("../images/icon.png") -8px 0;
+}
+
+.item-icon-2 {
+    display: inline-block;
+    width: 43px;
+    height: 48px;
+    margin: 0.4375rem 0 2.5rem;
+    background: url("../images/icon.png") 0 -62px;
+}
+
+.item-icon-3 {
+    display: inline-block;
+    width: 52px;
+    height: 55px;
+    margin: 0.1875rem 0 2.25rem;
+    background: url("../images/icon.png") -4px -110px;
+}
+
+.item-name {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 1.75rem;
+}
+
+.item-info {
+    font-size: 1rem;
+    color: #999999;
+}
+
+.item-border {
+    border-right: 0.0625rem dashed #dedede;
+}
+
+.item-icon-4 {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 0.75rem;
+    background: url("../images/icon.png")  -47px -200px;
+}
+
+.item-data {
+    font-size: 1.125rem;
+    margin: 3.875rem 0 ;
+    padding: 0 3.25rem;
+    color: #999999;
+}
+
+@media screen and (min-width: 1200px) {
+    .item-data {
+        text-align: left;
+    }
+}
+
+.item-data p {
+    margin: 0.75rem 0 1.5rem;
+}
+
+.item-data-color {
+    color: #26a26f;
+}
+
+.study .row{
+    margin-bottom: 6rem;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding-bottom: 0.75rem;
+}
+
+.study-order {
+    padding: 3rem 0;
+}
+
+.study-No {
+    display: inline-block;
+    padding-top: 24px;
+    background: url("../images/icon.png") 0 -286px;
+    width: 74px;
+    height: 74px;
+    font-size: 1.125rem;
+    color: #29b078;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.study-text {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #999;
+    width: 9.25rem;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 360px) {
+    .study-icon {
+        display: inline-block;
+        width: 32px;
+        height: 30px;
+        margin: 1.375rem 0;
+        background: url("../images/icon.png") -3px -256px;
+        vertical-align: middle;
+    }
+}
+
+/*.study-icon {
+    display: inline-block;
+    width: 32px;
+    height: 30px;
+    margin: 1.8334rem 0;
+    background: url("../images/icon.png") -3px -256px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 360px) {
+    .study-icon {
+        background: url("") !important;
+    }
+}*/
+
+.students {
+    margin-bottom: 9rem;
+}
+
+.students .row{
+    margin-top: 3.125rem;
+}
+
+.students .row ul {
+    margin-top: 3.75rem;
+}
+
+.student {
+    margin-bottom: 1.5rem;
+}
+
+.student-card {
+    display: inline-block;
+    box-shadow: 0 0.1125rem 0.15rem #eeeded;
+    padding: 1.25rem 1.656rem 2.5rem;
+    border-radius: 0.25rem;
+    background: #ffffff;
+}
+
+.student-name {
+    font-size: 1.125rem;
+    margin: 2.25rem 0 1.75rem;
+    font-weight: bold;
+}
+
+.student-info {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #999;
+}
+
+.students-btn-group {
+    width: 100%;
+    padding: 1.25rem 0 0;
+}
+
+.students-btn {
+    display: inline-block;
+    width: 0.8125rem;
+    height: 0.8125rem;
+    margin: 0 0.3125rem;
+    border: 1px solid #eeeded;
+    box-shadow: 0 0.125rem 0.125rem #eeeded;
+    border-radius: 50%;
+}
+
+.students-btn:hover {
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #29b078;
+}
+
+.students-active {
+    width: 0.875rem;
+    height: 0.875rem;
+    background: #28b078;
+}
+
+.enterprises {
+    margin-bottom: 6rem;
+}
+
+.enterprises .row ul {
+    margin-top: 3.75rem;
+}
+
+.enterprises-group {
+    display: block;
+    box-shadow: 0 0.1875rem 0.1875rem #e2e2e2;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.enterprise {
+    display: inline-block;
+    padding: 4.875rem 7.3125rem;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.enterprise:hover {
+    box-shadow: 0 0 0.5rem #999999;
+    z-index: 1;
+}
+
+.enterprise img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;
+}
+
+.friendly-link {
+    background-color: #ffffff;
+    padding-bottom: 1rem;
+}
+
+.link {
+    float: left;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    margin-right: 3.9rem;
+    border-bottom: 0.0625rem solid #ffffff;
+    cursor: pointer;
+}
+
+.no-margin {
+    margin: 0 0;
+}
+
+.link a {
+    display: inline;
+    line-height: 1.75rem;
+    font-size: 0.875rem;
+    color: #999;
+}
+
+.link:hover {
+    border-bottom: 0.0625rem solid #26a26f;
+}

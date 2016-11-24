@@ -1,0 +1,41 @@
+
+    <div class="task10-header">
+        <a class="task10-header-left" href="#"><img src="images/house.png" alt="house"/></a>
+        <a class="task10-header-right" href="#"><img src="images/message.png" alt="message"/></a>
+        <span class="task10-header-title">游戏结果</span>
+    </div>
+    <div class="task10-game-content">
+        <div class="task10-game-cup"><img src="images/mainbody-cup.png" alt="cup"/></div>
+        <span id="game-cup-win" class="task10-game-cup-win">
+            {{winner}}胜利
+        </span>
+        <span id="game-cup-text" class="task10-game-cup-text">
+            太棒了!你知道么？在杀人游戏中只有{{playerPro}}%的卧底取得游戏最终的胜利哦！
+        </span>
+        <div id="game-result" class="task10-game-result">
+            本次游戏共计用时0小时25分钟<br>
+            杀&emsp;手{{killerNum}}人&emsp;&emsp;水&emsp;民{{peopleNum}}人<br>
+            卧底词汇：爱新觉罗<br>
+            水民词汇：努尔哈赤
+        </div>
+        <div id="game-course">
+            <div class="task10-game-course" ng-repeat="end in gameInfo">
+                <span class="task10-game-course-day">
+                    第{{end.day}}天
+                </span>
+                <span class="task10-game-course-time">0小时07分</span>
+                <span class="task10-game-course-text">
+                    晚上：{{end.num1}}号被杀手杀死，{{end.num1}}号是{{end.job1}}
+                </span>
+                <span class="task10-game-course-text">
+                    白天：{{end.num2}}号被全民投票投死，{{end.num2}}号是{{end.job2}}
+                </span>
+            </div>
+        </div>
+        <div class="task10-bottom"></div>
+    </div>
+    <div class="task10-footer">
+        <a id="footer-again" class="task10-footer-again" ng-click="decide()">再来一局</a>
+        <a id="footer-share" class="task10-footer-share" ng-click="share()">上传并分享</a>
+    </div>
+

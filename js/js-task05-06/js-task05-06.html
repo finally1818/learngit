@@ -73,14 +73,14 @@
             var reLevel = $('#re-level');
 
             var length = 0;
-            var ok1 = false;
+            /*var ok1 = false;
             var ok2 = false;
             var ok3 = false;
             var ok4 = false;
             var ok5 = false;
             var ok6 = false;
             var ok7 = false;
-            var ok8 = false;
+            var ok8 = false;*/
 
             //正则表达式声明
             var Chinese = /[^\u4e00-\u9fa5]/g;       //\u4e00-\u9fa5表示所有汉子,该正则表示所有非汉字。
@@ -114,7 +114,6 @@
                 else {
                     reName.html('恭喜你终于输入正确了');
                     console.log($name.val());
-                    ok1 = true;
                 }
             });
 
@@ -129,7 +128,6 @@
                 }
                 else if (QQNum.test($qq.val())){
                     reQQ.html('恭喜你终于输入正确了');
-                    ok2 = true;
                 }
                 else if (length > 10){
                     reQQ.html('有那么长的QQ号吗？');
@@ -146,7 +144,6 @@
             $type.blur(function(){
                 if ($type.is(':checked')){
                     reType.html('已选中');
-                    ok3 = true;
                 }
             });
 
@@ -166,7 +163,6 @@
                 }
                 else {
                     reSchool.html('恭喜你终于输入正确了');
-                    ok4 = true;
                 }
             });
 
@@ -177,7 +173,6 @@
             $talent.blur(function(){
                 if ($talent.is(':checked')){
                     reTalent.html('已选中');
-                    ok5 = true;
                 }
             });
 
@@ -188,7 +183,6 @@
             $level.blur(function(){
                 if ($level.is(':checked')){
                     reLevel.html('已选中');
-                    ok6 = true;
                 }
             });
 
@@ -276,10 +270,10 @@
                     default:
                         break;
                 }
-                if (ok1 && ok2 &&       //条件无法判断，不知道怎么传变量进来
-                        ok3 && ok4 &&
-                        ok5 && ok6 &&
-                        ok7 && wish != ''){
+                if (name != '' && qq != '' &&       //条件无法判断，不知道怎么传变量进来
+                        type != '' && school != '' &&
+                        talent != '' && level != '' &&
+                        time != '' && wish != ''){
                     $.ajax({
                         url: "/a/student",        //请求的url地址
                         dataType: "json",         //返回格式为json
@@ -438,7 +432,7 @@
     <p id="result"></p>
 
 
-    <script>
+    <!--<script>
         var $time = $('#time');
         /*var reTime = $('#re-time');*/
         var timesTamp = parseInt(new Date().getTime()/1000);        //当前时间时间戳
@@ -450,6 +444,6 @@
             console.log(str);
             console.log(timestamp);
         }
-    </script>
+    </script>-->
 </body>
 </html>
