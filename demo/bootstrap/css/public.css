@@ -88,6 +88,10 @@ a {
     background: #29b078;
 }
 
+.navbar-header {
+    float: right;
+}
+
 .nav-logo {
     text-align: center;
     padding: 1.4375rem 0;
@@ -109,7 +113,7 @@ a {
     text-decoration: none;
 }
 
-.nva-color {
+.nav-color {
     border-bottom: 0.25rem solid #ffffff;
 }
 

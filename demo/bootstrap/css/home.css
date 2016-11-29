@@ -38,6 +38,10 @@
     color: #999999;
 }
 
+.item-info-margin {
+    margin-bottom: 1rem;
+}
+
 .item-border {
     border-right: 0.0625rem dashed #dedede;
 }
