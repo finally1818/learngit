@@ -9,66 +9,59 @@
     <link rel="stylesheet" href="css/profession.css">
 </head>
 <body>
-    <header class="container">
-        <div class="row header">
-            <span class="col-lg-10 col-md-10 col-sm-9 col-xs-6 header-hotline">客服热线：010-123-56789</span>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <span class="col-lg-10 col-md-10 col-sm-9 col-xs-6 header-hotline">招生电话：0371-65501008</span>
             <i class="col-lg-2 col-md-2 col-sm-3 col-xs-6 header-icon">
                 <a href="#" class="header-icon-mb"></a>
                 <a href="#" class="header-icon-qq"></a>
                 <a href="#" class="header-icon-wc"></a>
             </i>
         </div>
-    </header>
-    <nav class="header-nav">
-        <div class="container">
-            <div class="row">
-                <a href="#" class="col-lg-2 col-md-2 col-sm-3 nav-logo">
-                    <img src="images/logo.png" alt="技能书logo">
-                </a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--JS导航条折叠组件，按钮-->
-                </div>
-                <div class="collapse navbar-collapse col-lg-5 col-md-5 col-sm-6 col-xs-12 nav-btn" id="bs-example-navbar-collapse-1">
-                    <!--JS导航条折叠组件-->
-                    <ul class="nav navbar-nav">
-                        <li><a href="home.html">首页</a></li>
-                        <li><a class="nva-color" href="profession.html">职业</a></li>
-                        <li><a href="">推荐</a></li>
-                        <li><a href="enterprises.html">合作</a></li>
-                    </ul>
-                </div>
-            </div>
+    </div>
+</header>
+<nav class="container">
+    <div class="row">
+        <a href="#" class="col-lg-4 col-md-4 col-sm-5 col-xs-5 nav-logo">
+            <img src="images/logo-3.png" width="100%" alt="logo">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--JS导航条折叠组件，按钮-->
         </div>
-    </nav>
+        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 collapse navbar-collapse nav-btn" id="bs-example-navbar-collapse-1">
+            <!--JS导航条折叠组件-->
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">首页</a></li>
+                <li><a href="#" id="myAlert1">学院</a></li>
+                <li><a href="#" id="myAlert2">师资</a></li>
+                <li><a class="nav-color" href="profession.html">就业</a></li>
+                <li><a href="enterprises.html">合作</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="body-background">
     <div class="container">
         <div class="nav-title">
             <span class="main-nav">首页></span>
-            <span class="sub-nav">职业</span>
+            <span class="sub-nav">就业</span>
         </div>
         <button class="visible-xs btn btn-default list-btn" data-toggle="collapse" data-target="#list-btn" id="false">方向</button>
         <ul class="list-group collapse text-center" id="list-btn">
-            <li class="list-group-item list-name list-active" id="first">
-                <a href="#">全部</a>
+            <li class="list-group-item list-name list-active"  id="first">
+                <a href="#high-school">高中教师</a>
             </li>
             <li class="list-group-item list-name">
-                <a href="#">前端开发</a>
+                <a href="#junior-high">初中教师</a>
             </li>
             <li class="list-group-item list-name">
-                <a href="#">后端开发</a>
-            </li>
-            <li class="list-group-item list-name">
-                <a href="#">移动开发</a>
-            </li>
-            <li class="list-group-item list-name">
-                <a href="#">整站开发</a>
-            </li>
-            <li class="list-group-item list-name">
-                <a href="#">运营维护</a>
+                <a href="#primary-school">小学教师</a>
             </li>
         </ul>
         <div class="row">
@@ -81,72 +74,77 @@
                         <a href="#">全部</a>
                     </li>
                     <li class="menu-name" >
-                        <a href="#">前端开发</a>
+                        <a href="#high-school">高中教师</a>
                     </li>
                     <li class="menu-name" >
-                        <a href="#">后端开发</a>
+                        <a href="#junior-high">初中教师</a>
                     </li>
                     <li class="menu-name" >
-                        <a href="#">移动开发</a>
-                    </li>
-                    <li class="menu-name" >
-                        <a href="#">整站开发</a>
-                    </li>
-                    <li class="menu-name" >
-                        <a href="#">运营维护</a>
+                        <a href="#primary-school">小学教师</a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="card-title">前端发展方向</div>
+        <a name="high-school">
+            <div class="card-title">高中教师方向</div>
+        </a>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">高中物理教师</span>
+                            <p class="card-name-text">负责高中物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
                     <li class="card-content2 card-border-right">
                         <h5>门槛</h5>
                         <img src="images/star.png" />
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2">
                         <h5>难易程度</h5>
                         <img src="images/star.png" />
                         <img src="images/star.png" />
+                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2 card-border-right">
                         <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
+                        <p><span class="red">1-4</span>年</p>
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-4年<span>4k-5k/月</span></p>
+                            <p>4年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉高中物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
@@ -154,46 +152,55 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">高中物理教师</span>
+                            <p class="card-name-text">负责高中物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
                     <li class="card-content2 card-border-right">
                         <h5>门槛</h5>
                         <img src="images/star.png" />
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2">
                         <h5>难易程度</h5>
                         <img src="images/star.png" />
                         <img src="images/star.png" />
+                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2 card-border-right">
                         <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
+                        <p><span class="red">1-4</span>年</p>
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-4年<span>4k-5k/月</span></p>
+                            <p>4年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉高中物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
@@ -201,46 +208,55 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">高中物理教师</span>
+                            <p class="card-name-text">负责高中物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
                     <li class="card-content2 card-border-right">
                         <h5>门槛</h5>
                         <img src="images/star.png" />
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2">
                         <h5>难易程度</h5>
                         <img src="images/star.png" />
                         <img src="images/star.png" />
+                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2 card-border-right">
                         <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
+                        <p><span class="red">1-4</span>年</p>
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-4年<span>4k-5k/月</span></p>
+                            <p>4年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉高中物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
@@ -248,264 +264,25 @@
         </div>
     </div>
     <div class="container">
-        <div class="card-title">后端发展方向</div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <ul class="card-content">
-                    <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
-                        <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content2 card-border-right">
-                        <h5>门槛</h5>
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2">
-                        <h5>难易程度</h5>
-                        <img src="images/star.png" />
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2 card-border-right">
-                        <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
-                    </li>
-                    <li class="card-content2">
-                        <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
-                    </li>
-                    <li class="clear"></li>
-                    <li>
-                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
-                        <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
-                    <li class="clear"></li>
-                    <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
-                    </li>
-                    <li class="clear"></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <ul class="card-content">
-                    <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
-                        <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content2 card-border-right">
-                        <h5>门槛</h5>
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2">
-                        <h5>难易程度</h5>
-                        <img src="images/star.png" />
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2 card-border-right">
-                        <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
-                    </li>
-                    <li class="card-content2">
-                        <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
-                    </li>
-                    <li class="clear"></li>
-                    <li>
-                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
-                        <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
-                    <li class="clear"></li>
-                    <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
-                    </li>
-                    <li class="clear"></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <ul class="card-content">
-                    <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
-                        <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content2 card-border-right">
-                        <h5>门槛</h5>
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2">
-                        <h5>难易程度</h5>
-                        <img src="images/star.png" />
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2 card-border-right">
-                        <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
-                    </li>
-                    <li class="card-content2">
-                        <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
-                    </li>
-                    <li class="clear"></li>
-                    <li>
-                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
-                        <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
-                    <li class="clear"></li>
-                    <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
-                    </li>
-                    <li class="clear"></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <ul class="card-content">
-                    <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
-                        <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content2 card-border-right">
-                        <h5>门槛</h5>
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2">
-                        <h5>难易程度</h5>
-                        <img src="images/star.png" />
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2 card-border-right">
-                        <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
-                    </li>
-                    <li class="card-content2">
-                        <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
-                    </li>
-                    <li class="clear"></li>
-                    <li>
-                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
-                        <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
-                    <li class="clear"></li>
-                    <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
-                    </li>
-                    <li class="clear"></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <ul class="card-content">
-                    <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
-                        <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content2 card-border-right">
-                        <h5>门槛</h5>
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2">
-                        <h5>难易程度</h5>
-                        <img src="images/star.png" />
-                        <img src="images/star.png" />
-                    </li>
-                    <li class="card-content2 card-border-right">
-                        <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
-                    </li>
-                    <li class="card-content2">
-                        <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
-                    </li>
-                    <li class="clear"></li>
-                    <li>
-                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
-                        <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
-                        </div>
-                    </li>
-                    <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
-                    <li class="clear"></li>
-                    <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
-                    </li>
-                    <li class="clear"></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="card-title">移动发展方向</div>
+        <a name="junior-high">
+            <div class="card-title">初中教师方向</div>
+        </a>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">初中物理教师</span>
+                            <p class="card-name-text">负责初中物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
                     <li class="card-content2 card-border-right">
                         <h5>门槛</h5>
+                        <img src="images/star.png" />
                         <img src="images/star.png" />
                     </li>
                     <li class="card-content2">
@@ -519,24 +296,30 @@
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-3年<span>4k-5k/月</span></p>
+                            <p>3年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉初中物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
@@ -544,15 +327,16 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">初中物理教师</span>
+                            <p class="card-name-text">负责初中物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
                     <li class="card-content2 card-border-right">
                         <h5>门槛</h5>
+                        <img src="images/star.png" />
                         <img src="images/star.png" />
                     </li>
                     <li class="card-content2">
@@ -566,24 +350,30 @@
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-3年<span>4k-5k/月</span></p>
+                            <p>3年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉初中物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
@@ -591,15 +381,16 @@
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">初中物理教师</span>
+                            <p class="card-name-text">负责初中物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
                     <li class="card-content2 card-border-right">
                         <h5>门槛</h5>
+                        <img src="images/star.png" />
                         <img src="images/star.png" />
                     </li>
                     <li class="card-content2">
@@ -613,24 +404,138 @@
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-3年<span>4k-5k/月</span></p>
+                            <p>3年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉初中物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <ul class="card-content">
+                    <li class="card-content1">
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
+                        <div class="card-intro">
+                            <span class="card-name">初中物理教师</span>
+                            <p class="card-name-text">负责初中物理教学，配合教务部完成教学。</p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content2 card-border-right">
+                        <h5>门槛</h5>
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2">
+                        <h5>难易程度</h5>
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2 card-border-right">
+                        <h5>成长周期</h5>
+                        <p><span class="red">1-3</span>年</p>
+                    </li>
+                    <li class="card-content2">
+                        <h5>稀缺程度</h5>
+                        <p><span class="red">3456</span>所学校需要</p>
+                    </li>
+                    <li class="clear"></li>
+                    <li>
+                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
+                        <div class="card-content3-text">
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-3年<span>4k-5k/月</span></p>
+                            <p>3年以上<span>6k-7k/月</span></p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉初中物理教材规定的演示实验和分组实验的实验原理</li>
+                    <li class="clear"></li>
+                    <li class="card-ios">
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <ul class="card-content">
+                    <li class="card-content1">
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
+                        <div class="card-intro">
+                            <span class="card-name">初中物理教师</span>
+                            <p class="card-name-text">负责初中物理教学，配合教务部完成教学。</p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content2 card-border-right">
+                        <h5>门槛</h5>
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2">
+                        <h5>难易程度</h5>
+                        <img src="images/star.png" />
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2 card-border-right">
+                        <h5>成长周期</h5>
+                        <p><span class="red">1-3</span>年</p>
+                    </li>
+                    <li class="card-content2">
+                        <h5>稀缺程度</h5>
+                        <p><span class="red">3456</span>所学校需要</p>
+                    </li>
+                    <li class="clear"></li>
+                    <li>
+                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
+                        <div class="card-content3-text">
+                            <p>1-2年<span>2k-3k/月</span></p>
+                            <p>2-3年<span>4k-5k/月</span></p>
+                            <p>3年以上<span>6k-7k/月</span></p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉初中物理教材规定的演示实验和分组实验的实验原理</li>
+                    <li class="clear"></li>
+                    <li class="card-ios">
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
@@ -638,17 +543,19 @@
         </div>
     </div>
     <div class="container">
-        <div class="card-title">运维发展方向</div>
+        <a name="primary-school">
+            <div class="card-title">小学教师方向</div>
+        </a>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <ul class="card-content">
                     <li class="card-content1">
-                        <i class="card-portrait"><img src="images/portrait5.png" /></i>
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
                         <div class="card-intro">
-                            <span class="card-name">Web前端工程师</span>
-                            <p class="card-name-text">Web前端开发工程师，主要职责是利用(X)HTML/CSS/<br/>JavaScript/flash等各种Web技术进行产品的开发。</p>
+                            <span class="card-name">小学物理教师</span>
+                            <p class="card-name-text">负责小学物理教学，配合教务部完成教学。</p>
                         </div>
                     </li>
                     <li class="clear"></li>
@@ -659,69 +566,196 @@
                     <li class="card-content2">
                         <h5>难易程度</h5>
                         <img src="images/star.png" />
-                        <img src="images/star.png" />
                     </li>
                     <li class="card-content2 card-border-right">
                         <h5>成长周期</h5>
-                        <p><span class="red">1-3</span>年</p>
+                        <p><span class="red">1-2</span>年</p>
                     </li>
                     <li class="card-content2">
                         <h5>稀缺程度</h5>
-                        <p><span class="red">345</span>家公司需要</p>
+                        <p><span class="red">3456</span>所学校需要</p>
                     </li>
                     <li class="clear"></li>
                     <li>
                         <div class="card-content3 card-border-right text-center">薪资待遇</div>
                         <div class="card-content3-text">
-                            <p>0-1年<span>Xk-Xk/月</span></p>
-                            <p>1-3年<span>Xk-Xk/月</span></p>
-                            <p>3年以上<span>Xk-Xk/月</span></p>
+                            <p>0-1年<span>2k-3k/月</span></p>
+                            <p>1-2年<span>4k-5k/月</span></p>
+                            <p>2年以上<span>6k-7k/月</span></p>
                         </div>
                     </li>
                     <li class="clear"></li>
-                    <li class="card-content4">有<span class="red">286</span>人正在学</li>
-                    <li class="card-content5 text-center">提示:在你学习之前你应该已经掌握XXXX、XXX、XX等语言基础</li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉小学物理教材规定的演示实验和分组实验的实验原理</li>
                     <li class="clear"></li>
                     <li class="card-ios">
-                        <h4 class="ios text-center">iOS工程师</h4>
-                        <p class="ios-text text-left">iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属于类Unix的商业操作系统。国内iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。</p>
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <ul class="card-content">
+                    <li class="card-content1">
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
+                        <div class="card-intro">
+                            <span class="card-name">小学物理教师</span>
+                            <p class="card-name-text">负责小学物理教学，配合教务部完成教学。</p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content2 card-border-right">
+                        <h5>门槛</h5>
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2">
+                        <h5>难易程度</h5>
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2 card-border-right">
+                        <h5>成长周期</h5>
+                        <p><span class="red">1-2</span>年</p>
+                    </li>
+                    <li class="card-content2">
+                        <h5>稀缺程度</h5>
+                        <p><span class="red">3456</span>所学校需要</p>
+                    </li>
+                    <li class="clear"></li>
+                    <li>
+                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
+                        <div class="card-content3-text">
+                            <p>0-1年<span>2k-3k/月</span></p>
+                            <p>1-2年<span>4k-5k/月</span></p>
+                            <p>2年以上<span>6k-7k/月</span></p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉小学物理教材规定的演示实验和分组实验的实验原理</li>
+                    <li class="clear"></li>
+                    <li class="card-ios">
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
+                    </li>
+                    <li class="clear"></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                <ul class="card-content">
+                    <li class="card-content1">
+                        <i class="card-portrait"><img src="images/portrait-5.png" /></i>
+                        <div class="card-intro">
+                            <span class="card-name">小学物理教师</span>
+                            <p class="card-name-text">负责小学物理教学，配合教务部完成教学。</p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content2 card-border-right">
+                        <h5>门槛</h5>
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2">
+                        <h5>难易程度</h5>
+                        <img src="images/star.png" />
+                    </li>
+                    <li class="card-content2 card-border-right">
+                        <h5>成长周期</h5>
+                        <p><span class="red">1-2</span>年</p>
+                    </li>
+                    <li class="card-content2">
+                        <h5>稀缺程度</h5>
+                        <p><span class="red">3456</span>所学校需要</p>
+                    </li>
+                    <li class="clear"></li>
+                    <li>
+                        <div class="card-content3 card-border-right text-center">薪资待遇</div>
+                        <div class="card-content3-text">
+                            <p>0-1年<span>2k-3k/月</span></p>
+                            <p>1-2年<span>4k-5k/月</span></p>
+                            <p>2年以上<span>6k-7k/月</span></p>
+                        </div>
+                    </li>
+                    <li class="clear"></li>
+                    <li class="card-content4">有<span class="red">12345</span>名学生</li>
+                    <li class="card-content5 text-center">提示:熟悉小学物理教材规定的演示实验和分组实验的实验原理</li>
+                    <li class="clear"></li>
+                    <li class="card-ios">
+                        <h4 class="ios text-center">任职要求</h4>
+                        <p class="ios-text text-left">
+                            <br>
+                            1、本科及以上学历，重点院校师范类专业本科、研究生毕业者优先；<br>
+                            2、热爱个性化教育行业，有授课、辅导相关经验者优先；<br>
+                            3、有教师资格证等相关证件; 有高级教师、特级教师职称的教师优先；<br>
+                            4、有较强的语言表达及沟通能力，责任心强，富有亲和力，有良好的团队合作精神。<br>
+                        </p>
                     </li>
                     <li class="clear"></li>
                 </ul>
             </div>
         </div>
     </div>
-    <footer class="public-footer">
-        <div class="container">
-            <div class="row footer-col">
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 footer-col-left">
-                    <p>技能书一改变你我</p>
-                    <a href="#">关于我们</a>
-                    <span>|</span>
-                    <a href="#">联系我们</a>
-                    <span>|</span>
-                    <a href="#">合作企业</a>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 footer-col-right">
-                    <p>旗下网站</p>
-                    <a href="#">草船云孵化器</a><a href="#">最强IT特训营</a>
-                    <br/><br/>
-                    <a href="#">葡萄藤轻游戏</a><a href="#">桌游精灵</a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 footer-2D-code">
-                    <p>微信公众平台</p>
-                    <img src="images/2D-code.png">
-                </div>
+    <a href="#" class="top"><img src="images/top.png" alt="top"></a>
+</div>
+<footer class="public-footer">
+    <div class="container">
+        <div class="row footer-col">
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 footer-col-left">
+                <p>郑州师范学院一改变你我</p>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">合作企业</a>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 footer-col-right">
+                <p>二级学院</p>
+                <a href="#">文学院</a>
+                <a href="#">传播学院</a>
+                <a href="#">外国语学院</a>
+                <a href="#">数学与统计学院</a>
+                <a href="#">物理与电子工程学院</a>
+                <a href="#">化学化工学院</a>
+                <a href="#">政治与公共管理学院</a>
+                <a href="#">历史文化学院</a>
+                <a href="#">地理与旅游学院</a>
+                <a href="#">生命科学学院</a>
+                <a href="#">教育科学学院</a>
+                <a href="#">特殊教育学院</a>
+                <a href="#">初等教育学院</a>
+                <a href="#">经济与管理学院</a>
+                <a href="#">体育学院</a>
+                <a href="#">音乐与舞蹈学院</a>
+                <a href="#">美术学院</a>
+                <a href="#">软件学院</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-center footer-2D-code">
+                <p>微信平台二维码</p>
+                <img src="images/2D-code.png" width="70%" alt="二维码">
             </div>
         </div>
-        <div class="footer-copyright text-center">
-            <span>Copyright © 2015技能树 www.jnshu.com</span>
-            <span>All Rights Reserved | 京ICP备13005880号</span>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-copyright text-center">
+        <span>版权所有 Copyright © 2015-2016 郑州师范学院</span>
+        <span>备案序号：豫ICP备11082541号</span>
+    </div>
+</footer>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/public.js"></script>
 </body>
 </html>

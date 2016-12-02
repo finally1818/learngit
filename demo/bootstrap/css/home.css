@@ -39,7 +39,7 @@
 }
 
 .item-info-margin {
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
 }
 
 .item-border {
@@ -108,6 +108,11 @@
     width: 9.25rem;
     vertical-align: middle;
 }
+@media screen and (max-width: 767px) {
+    .study-order {
+        padding: 1rem 0;
+    }
+}
 
 @media screen and (min-width: 360px) {
     .study-icon {
@@ -119,21 +124,6 @@
         vertical-align: middle;
     }
 }
-
-/*.study-icon {
-    display: inline-block;
-    width: 32px;
-    height: 30px;
-    margin: 1.8334rem 0;
-    background: url("../images/icon.png") -3px -256px;
-    vertical-align: middle;
-}
-
-@media screen and (max-width: 360px) {
-    .study-icon {
-        background: url("") !important;
-    }
-}*/
 
 .students {
     margin-bottom: 9rem;
@@ -189,13 +179,13 @@
 .students-btn:hover {
     width: 0.875rem;
     height: 0.875rem;
-    background: #29b078;
+    background: #999;
 }
 
 .students-active {
     width: 0.875rem;
     height: 0.875rem;
-    background: #28b078;
+    background: #999;
 }
 
 .enterprises {
@@ -235,7 +225,6 @@
 }
 
 .friendly-link {
-    background-color: #ffffff;
     padding-bottom: 1rem;
 }
 
@@ -243,9 +232,10 @@
     float: left;
     height: 1.75rem;
     line-height: 1.75rem;
-    margin-right: 3.9rem;
+    margin-right: 4rem;
     border-bottom: 0.0625rem solid #ffffff;
     cursor: pointer;
+    color: #999;
 }
 
 .no-margin {
@@ -260,5 +250,5 @@
 }
 
 .link:hover {
-    border-bottom: 0.0625rem solid #26a26f;
+    border-bottom: 0.0625rem solid #999;
 }

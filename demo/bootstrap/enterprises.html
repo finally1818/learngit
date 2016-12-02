@@ -10,42 +10,43 @@
     <link rel="stylesheet" href="css/enterprises.css">
 </head>
 <body>
-    <header class="container">
-        <div class="row header">
-            <span class="col-lg-10 col-md-10 col-sm-9 col-xs-6 header-hotline">客服热线：010-123-56789</span>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <span class="col-lg-10 col-md-10 col-sm-9 col-xs-6 header-hotline">招生电话：0371-65501008</span>
             <i class="col-lg-2 col-md-2 col-sm-3 col-xs-6 header-icon">
                 <a href="#" class="header-icon-mb"></a>
                 <a href="#" class="header-icon-qq"></a>
                 <a href="#" class="header-icon-wc"></a>
             </i>
         </div>
-    </header>
-    <nav class="header-nav">
-        <div class="container">
-            <div class="row">
-                <a href="#" class="col-lg-2 col-md-2 col-sm-3 nav-logo">
-                    <img src="images/logo.png" alt="技能书logo">
-                </a>
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!--JS导航条折叠组件，按钮-->
-                </div>
-                <div class="collapse navbar-collapse col-lg-5 col-md-5 col-sm-6 col-xs-12 nav-btn" id="bs-example-navbar-collapse-1">
-                    <!--JS导航条折叠组件-->
-                    <ul class="nav navbar-nav">
-                        <li><a href="home.html">首页</a></li>
-                        <li><a href="profession.html">职业</a></li>
-                        <li><a href="">推荐</a></li>
-                        <li><a class="nva-color" href="enterprises.html">合作</a></li>
-                    </ul>
-                </div>
-            </div>
+    </div>
+</header>
+<nav class="container">
+    <div class="row">
+        <a href="#" class="col-lg-4 col-md-4 col-sm-5 col-xs-5 nav-logo">
+            <img src="images/logo-3.png" width="100%" alt="logo">
+        </a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--JS导航条折叠组件，按钮-->
         </div>
-    </nav>
+        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 collapse navbar-collapse nav-btn" id="bs-example-navbar-collapse-1">
+            <!--JS导航条折叠组件-->
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">首页</a></li>
+                <li><a href="#" id="myAlert1">学院</a></li>
+                <li><a href="#" id="myAlert2">师资</a></li>
+                <li><a href="profession.html">就业</a></li>
+                <li><a class="nav-color" href="enterprises.html">合作</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <div class="carousel-inner">
         <div class="item active">
             <img src="images/banner-5.png">
@@ -60,43 +61,23 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-4">
-                <button class="visible-xs btn btn-default enterprises-btn" data-toggle="collapse" data-target="#enterprises-btn" id="false">合作企业</button>
+                <button class="visible-xs btn btn-default enterprises-btn" data-toggle="collapse" data-target="#enterprises-btn" id="false">合作单位</button>
                 <ul class="list-group collapse text-center" id="enterprises-btn">
                     <li class="list-group-item list-name" id="first">
                         <i></i>
-                        <a href="#">阿里巴巴</a>
+                        <a href="#">万科</a>
                     </li>
                     <li class="list-group-item list-name">
                         <i></i>
-                        <a href="#">腾讯视频</a>
+                        <a href="#">复地</a>
                     </li>
-                    <li class="list-group-item list-name">
-                        <i></i>
-                        <a href="#">土豆网</a>
-                    </li>
-                    <li class="list-group-item list-name">
-                        <i></i>
-                        <a href="#">北京葡萄藤</a>
-                    </li>
-                    <li class="list-group-item list-name">
-                        <i></i>
-                        <a href="#">阿里巴巴</a>
-                    </li>
-                    <li class="list-group-item list-name">
-                        <i></i>
-                        <a href="#">阿里巴巴</a>
-                    </li>
-                    <li class="list-group-item list-name">
-                        <i></i>
-                        <a href="#">腾讯视频</a>
-                    </li>
-                    <li class="list-group-item list-name">
+                    <li class="list-group-item list-name enterprises-name-active">
                         <i></i>
                         <a href="#">土豆网</a>
                     </li>
                     <li class="list-group-item list-name">
                         <i></i>
-                        <a href="#">北京葡萄藤</a>
+                        <a href="#">鹏诚集团</a>
                     </li>
                     <li class="list-group-item list-name">
                         <i></i>
@@ -104,11 +85,31 @@
                     </li>
                     <li class="list-group-item list-name">
                         <i></i>
-                        <a href="#">北京葡萄藤</a>
+                        <a href="#">环信</a>
                     </li>
                     <li class="list-group-item list-name">
                         <i></i>
-                        <a href="#">阿里巴巴</a>
+                        <a href="#">郑州七中</a>
+                    </li>
+                    <li class="list-group-item list-name">
+                        <i></i>
+                        <a href="#">郑州九中</a>
+                    </li>
+                    <li class="list-group-item list-name">
+                        <i></i>
+                        <a href="#">郑州一中</a>
+                    </li>
+                    <li class="list-group-item list-name">
+                        <i></i>
+                        <a href="#">一零一中</a>
+                    </li>
+                    <li class="list-group-item list-name">
+                        <i></i>
+                        <a href="#">一零六中</a>
+                    </li>
+                    <li class="list-group-item list-name">
+                        <i></i>
+                        <a href="#">郑州五中</a>
                     </li>
                 </ul>
                 <div class="enterprises text-center">
@@ -116,19 +117,19 @@
                     <div class="enterprises-menu text-left">
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">阿里巴巴</a>
+                            <a href="#">万科</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">腾讯视频</a>
+                            <a href="#">复地</a>
                         </div>
-                        <div class="enterprises-name  enterprises-name-active" >
+                        <div class="enterprises-name enterprises-name-active" >
                             <i></i>
                             <a href="#">土豆网</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">北京葡萄藤</a>
+                            <a href="#">鹏诚集团</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
@@ -136,31 +137,31 @@
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">阿里巴巴</a>
+                            <a href="#">环信</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">腾讯视频</a>
+                            <a href="#">郑州七中</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">土豆网</a>
+                            <a href="#">郑州九中</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">北京葡萄藤</a>
+                            <a href="#">郑州一中</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">阿里巴巴</a>
+                            <a href="#">一零一中</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">北京葡萄藤</a>
+                            <a href="#">一零六中</a>
                         </div>
                         <div class="enterprises-name" >
                             <i></i>
-                            <a href="#">阿里巴巴</a>
+                            <a href="#">郑州五中</a>
                         </div>
                     </div>
                 </div>
@@ -185,38 +186,56 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="top"><img src="images/top.png" alt="top"></a>
     </div>
-    <footer class="public-footer">
-        <div class="container">
-            <div class="row footer-col">
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 footer-col-left">
-                    <p>技能书一改变你我</p>
-                    <a href="#">关于我们</a>
-                    <span>|</span>
-                    <a href="#">联系我们</a>
-                    <span>|</span>
-                    <a href="#">合作企业</a>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6 footer-col-right">
-                    <p>旗下网站</p>
-                    <a href="#">草船云孵化器</a><a href="#">最强IT特训营</a>
-                    <br/><br/>
-                    <a href="#">葡萄藤轻游戏</a><a href="#">桌游精灵</a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 footer-2D-code">
-                    <p>微信公众平台</p>
-                    <img src="images/2D-code.png">
-                </div>
+
+<footer class="public-footer">
+    <div class="container">
+        <div class="row footer-col">
+            <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 footer-col-left">
+                <p>郑州师范学院一改变你我</p>
+                <a href="#">关于我们</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">合作企业</a>
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 footer-col-right">
+                <p>二级学院</p>
+                <a href="#">文学院</a>
+                <a href="#">传播学院</a>
+                <a href="#">外国语学院</a>
+                <a href="#">数学与统计学院</a>
+                <a href="#">物理与电子工程学院</a>
+                <a href="#">化学化工学院</a>
+                <a href="#">政治与公共管理学院</a>
+                <a href="#">历史文化学院</a>
+                <a href="#">地理与旅游学院</a>
+                <a href="#">生命科学学院</a>
+                <a href="#">教育科学学院</a>
+                <a href="#">特殊教育学院</a>
+                <a href="#">初等教育学院</a>
+                <a href="#">经济与管理学院</a>
+                <a href="#">体育学院</a>
+                <a href="#">音乐与舞蹈学院</a>
+                <a href="#">美术学院</a>
+                <a href="#">软件学院</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-5 col-xs-5 text-center footer-2D-code">
+                <p>微信平台二维码</p>
+                <img src="images/2D-code.png" width="70%" alt="二维码">
             </div>
         </div>
-        <div class="footer-copyright text-center">
-            <span>Copyright © 2015技能树 www.jnshu.com</span>
-            <span>All Rights Reserved | 京ICP备13005880号</span>
-        </div>
-    </footer>
+    </div>
+    <div class="footer-copyright text-center">
+        <span>版权所有 Copyright © 2015-2016 郑州师范学院</span>
+        <span>备案序号：豫ICP备11082541号</span>
+    </div>
+</footer>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/public.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 @media screen and (max-width: 767px) {
     html {
         /* 小于767px，1rem=8px */
-        font-size: 40%;
+        font-size: 50%;
     }
 }
 
@@ -25,19 +25,22 @@
     }
 }
 
-body {
-    background: #fafafa;
-}
-
 a {
+    display: inline-block;
     text-decoration: none !important;
 }
 
+p {
+    margin: 0;
+}
 /*-----header-----------------------------------------------------------*/
+.header {
+    background: #f2f2f2;
+}
 
 .header-hotline {
     font-size: 0.875rem;
-    line-height: 2.5rem;
+    line-height: 1.875rem;
     color: #29b078;
 }
 
@@ -47,7 +50,7 @@ a {
     width: 25px;
     height: 24px;
     padding: 0;
-    margin: 0.5rem 0 0.5rem 1rem;
+    margin: 0.1875rem 0.5rem;
 }
 
 .header-icon-wc {
@@ -62,13 +65,93 @@ a {
     background: url("../images/icon.png") 74px -189px;
 }
 
-@media screen and (max-width: 360px) {
+.navbar-header {
+    float: right;
+}
+
+.header-logo {
+    height: 5.625rem;
+}
+
+.nav-logo {
+    width: 23.125rem;
+}
+
+.icon-bar {
+    background-color: #333;
+}
+
+.nav-btn {
+    float: right;
+}
+
+.nav-btn li a {
+    line-height: 2.625rem;
+    font-size:  1rem;
+    padding: 0 1rem;
+    margin: 1.5rem 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-btn li .nav-color {
+    color: #c01920;
+    background: #f2f2f2;
+}
+
+.nav-btn li a:hover {
+    color: #c01920;
+    background: #f2f2f2;
+}
+
+/*@media screen and (max-width: 1199px) {
+    .top {
+        display: none;
+    }
+}*/
+
+@media screen and (max-width: 767px) {
     .header-hotline, .header-icon {
         width: 100%;
     }
 
     .header-icon a {
         float: left;
+    }
+
+    .nav-btn {
+        float: right;
+        text-align: center;
+    }
+
+    .nav-btn ul li a{
+        float: left;
+        width: 20%;
+        padding: 0.25rem 0;
+        margin: 0;
+    }
+}
+
+/*-----body-------------------------------------------------------------*/
+.body-background {
+    background: #fafafa;
+}
+
+.top {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    border: 0.0625rem solid #fafafa;
+    -webkit-border-radius: 0.125rem;
+    -moz-border-radius: 0.125rem;
+    border-radius: 0.25rem;
+    box-shadow: 0.0625rem 0.125rem 0.1875rem #e0e0e0;
+    background: #fafafa;
+}
+/*-----footer-----------------------------------------------------------*/
+@media screen and (max-width: 360px) {
+    .nav-logo {
+        width: 20rem;
     }
 
     .footer-col-left, .footer-col-right {
@@ -84,60 +167,8 @@ a {
     }
 }
 
-.header-nav {
-    background: #29b078;
-}
-
-.navbar-header {
-    float: right;
-}
-
-.nav-logo {
-    text-align: center;
-    padding: 1.4375rem 0;
-}
-
-.icon-bar {
-    background-color: #FFFFFF;
-}
-
-.nav-btn {
-    float: right;
-}
-
-.nav-btn li a {
-    font-size:  1rem;
-    padding: 2.5rem 2rem 2.25rem;
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav-color {
-    border-bottom: 0.25rem solid #ffffff;
-}
-
-.nav-btn li a:hover {
-    background: #29b078;
-    border-bottom: 0.25rem solid #fff;
-}
-
-@media screen and (max-width: 767px) {
-    .nav-btn {
-        float: right;
-        text-align: center;
-    }
-    .nav-btn ul li a{
-        float: left;
-        width: 25%;
-        padding: 0.75rem 0;
-    }
-}
-
-/*-----footer-----------------------------------------------------------*/
-
 .public-footer {
-    background: #29b078;
+    background: #f2f2f2;
 }
 
 .footer-col {
@@ -146,7 +177,7 @@ a {
 
 .footer-col p {
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #333;
     margin: 0;
 }
 
@@ -156,18 +187,21 @@ a {
 
 .footer-col a {
     font-size: 0.875rem;
-    color: #FFFFFF;
+    color: #333;
     padding-bottom: 0.3125rem;
+    margin-bottom: 0.3125rem;
+    border-bottom: 0.0625rem solid transparent;
 }
 
 .footer-col a:hover {
-    border-bottom: 0.0625rem solid #FFFFFF;
+    color: red;
+    border-bottom: 0.0625rem solid red;
 }
 
 .footer-col-left span {
     padding: 0 0.625rem;
-    font-size: 1.6rem;
-    color: #FFFFFF;
+    font-size: 1.3rem;
+    color: #333;
 }
 
 .footer-col-right p {
@@ -185,8 +219,8 @@ a {
 .footer-copyright {
     line-height: 1.875rem;
     font-size: 0.75rem;
-    color: #FFFFFF;
-    border-top: 0.0625rem solid #32c086;
+    color: #333;
+    border-top: 0.0625rem solid #f2f2f2;
 }
 
 .footer-copyright span {

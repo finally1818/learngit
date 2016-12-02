@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            padding: 0;
+            background: url("css4.png") no-repeat;
+            font-family: "微软雅黑", monospace;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 40%;
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #00006b;
+        }
+
+        .title input {
+            display: block;
+            width: 7.8125rem;
+            height: 7.8125rem;
+            margin: 0.5rem;
+            font-size: 2.1875rem;
+            font-weight: bold;
+            color: rgba(0,0,0,1);
+            border-left: 0.625rem solid #FFFF00;
+            border-right: 0.625rem solid #FFA500;
+            border-top: 0.625rem solid #00ff00;
+            border-bottom: 0.625rem solid #CC99FF;
+            border-radius: 50%;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+        }
+
+        a input {
+            display: block;
+            float: left;
+            width: 6.5625rem;
+            height: 6.5625rem;
+            padding: 0;
+            margin: 0.3125rem 1rem;
+            font-size: 0.8rem;
+            color: rgba(100,70,140,1);
+            border-left: 0.5rem solid #ffff00;
+            border-right: 0.5rem solid #FFA500;
+            border-top: 0.5rem solid #00ff00;
+            border-bottom: 0.5rem solid #CC99FF;
+            border-radius: 50%;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            transition: all .5s ease-in;
+        }
+
+        a input:hover {
+            font-size: 1rem;
+            color: rgba(0,0,0,1);
+            transform: rotate(360deg);
+        }
+
+        .title-margin {
+            margin-left: 7.5rem;
+        }
+
+        .demo1,
+        .demo2,
+        .js1,
+        .js2,
+        .js3,
+        .js4,
+        .js5,
+        .js6,
+        .css1,
+        .css2 {
+            position: relative;
+            float: left;
+        }
+
+        .demo1-hover,
+        .demo2-hover,
+        .js1-hover,
+        .js2-hover,
+        .js3-hover,
+        .js4-hover,
+        .js5-hover,
+        .js6-hover,
+        .css1-hover,
+        .css2-hover {
+            width: 7.5625rem;
+            line-height: 1.625rem;
+            background: lightgray;
+            border-radius: 0.25rem;
+            position: absolute;
+            top: 7.1875rem;
+            left: 0.5rem;
+            visibility: hidden;
+            z-index: 2;
+            color: black;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .demo1:hover .demo1-hover,
+        .demo2:hover .demo2-hover,
+        .js1:hover .js1-hover,
+        .js2:hover .js2-hover,
+        .js3:hover .js3-hover,
+        .js4:hover .js4-hover,
+        .js5:hover .js5-hover,
+        .js6:hover .js6-hover,
+        .css1:hover .css1-hover,
+        .css2:hover .css2-hover {
+            visibility: visible;
+        }
+
+        footer {
+            width: 100%;
+            height: 8.125rem;
+        }
+
+        .clear {
+            clear: both;
+            width: 0;
+            height: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        请使用Chrome、ie10+等浏览器浏览以下各个内容。<br>
+        受服务器限制，加载速度不快，图片加载请耐心等待数秒。<br>
+    </header>
+    <div class="title">
+        <input type="button" value="Demo">
+    </div>
+    <div class="demo1 title-margin">
+        <a class="bootstrap" href="http://119.10.57.69:880/jnshu039/demo/bootstrap/home.html" target="_blank">
+            <input type="button" value="Bootstrap">
+        </a>
+        <div class="demo1-hover">
+            <div>Bootstrap</div>
+            <div>首页/就业/合作</div>
+            <div>三个页面跳转</div>
+            <div>响应式布局</div>
+            <div>组件</div>
+            <div>轮播图</div>
+            <div>页面内锚点跳转</div>
+        </div>
+    </div>
+    <div class="demo2">
+        <a class="angularjs" href="http://119.10.57.69:880/jnshu039/demo/angularjs/home.html" target="_blank">
+            <input type="button" value="AngularJS">
+        </a>
+        <div class="demo2-hover">
+            <div>AngularJS</div>
+            <div>MVVM模式</div>
+            <div>路由</div>
+            <div>双向数据绑定</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="title">
+        <input type="button" value="JS">
+    </div>
+    <div class="js1 title-margin">
+        <a href="http://119.10.57.69:880/jnshu039/js/js-task01/js-task01.html" target="_blank">
+            <input type="button" value="随机变色">
+        </a>
+        <div class="js1-hover">
+            <div>盒子模型</div>
+            <div>随机选取</div>
+            <div>定时器</div>
+        </div>
+    </div>
+    <div class="js2">
+        <a href="http://119.10.57.69:880/jnshu039/js/js-task02-04/js-task02-1.html" target="_blank">
+            <input type="button" value="杀人游戏">
+        </a>
+        <div class="js2-hover">
+            <div>雪碧图</div>
+            <div>源生JS</div>
+            <div>业务逻辑</div>
+            <div>DOM操作</div>
+            <div>Web存储</div>
+        </div>
+    </div>
+    <div class="js3">
+        <a href="http://119.10.57.69:880/jnshu039/js/js-task05-06/js-task05-06.html" target="_blank">
+            <input type="button" value="Ajax表单">
+        </a>
+        <div class="js3-hover">
+            <div>接口文档</div>
+            <div>jQuery</div>
+            <div>AJAX异步</div>
+            <div>Nginx跨域</div>
+            <div>正则表达式</div>
+            <div>富文本编辑器</div>
+        </div>
+    </div>
+    <div class="js4">
+        <a href="http://119.10.57.69:880/jnshu039/js/3d/3d.html" target="_blank">
+            <input type="button" value="3d相册">
+        </a>
+        <div class="js4-hover">
+            <div>CSS3转换</div>
+            <div>HTML5</div>
+        </div>
+    </div>
+    <div class="js5">
+        <a href="http://119.10.57.69:880/jnshu039/js/pinterest/pinterest.html" target="_blank">
+            <input type="button" value="瀑布流">
+        </a>
+        <div class="js5-hover">
+            <div>jQuery</div>
+        </div>
+    </div>
+    <div class="js6">
+        <a href="http://119.10.57.69:880/jnshu039/js/carousel/carousel.html" target="_blank">
+            <input type="button" value="轮播图">
+        </a>
+        <div class="js6-hover">
+            <div>CSS3景深</div>
+            <div>CSS3动画</div>
+            <div>HTML5</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="title">
+        <input type="button" value="CSS">
+    </div>
+    <div class="css1  title-margin">
+        <a href="http://119.10.57.69:880/jnshu039/css/css-task05/task05-1.html" target="_blank">
+            <input type="button" value="手机布局">
+        </a>
+        <div class="css1-hover">
+            <div>背景图片</div>
+            <div>自适应</div>
+            <div>浮动</div>
+            <div>代码规范</div>
+        </div>
+    </div>
+    <div class="css2">
+        <a href="http://119.10.57.69:880/jnshu039/css/css-task09/task09.html" target="_blank">
+            <input type="button" value="网页布局">
+        </a>
+        <div class="css2-hover">
+            <div>PS切图</div>
+            <div>网页布局</div>
+            <div>单选多选</div>
+            <div>select</div>
+            <div>less编译</div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <footer></footer>
+</body>
+</html>
