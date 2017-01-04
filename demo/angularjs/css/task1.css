@@ -8,12 +8,11 @@
 	padding: 48.125rem 8.125rem 0;
 }
 .task1-ui-text {
-	display: block;
-	float: left;
+    text-align: center;
 	font-size: 2.5rem;
 	color: #FFFFFF;
 }
-.task1-ui-dot {
+/*.task1-ui-dot {
 	float: left;
 	width: 0.625rem;
 	height: 0.625rem;
@@ -22,4 +21,4 @@
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	margin: 1.3125rem 1.25rem;
-}
+}*/
